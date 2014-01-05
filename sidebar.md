@@ -1,4 +1,4 @@
->* NL Teams
+>* National League
  * West
   * [Arizona Diamondbacks](http://www.reddit.com/r/azdiamondbacks)
   * [Colorado Rockies](http://www.reddit.com/r/ColoradoRockies)
@@ -17,7 +17,7 @@
  * [New York Mets](http://www.reddit.com/r/NewYorkMets)
  * [Philadelphia Phillies](http://www.reddit.com/r/Phillies)
  * [Washington Nationals](http://www.reddit.com/r/Nationals)
-* AL Teams
+* American League
  * West
  * [Los Angeles Angels](http://www.reddit.com/r/AngelsBaseball)
  * [Oakland Athletics](http://www.reddit.com/r/oaklandathletics)
@@ -36,7 +36,7 @@
  * [New York Yankees](http://www.reddit.com/r/Yankees)
  * [Tampa Bay Rays](http://www.reddit.com/r/TampaBayRays)
  * [Toronto Blue Jays](http://www.reddit.com/r/TorontoBlueJays)
-* Toronto Teams
+* Toronto
  * [Argonauts](http://www.reddit.com/r/Argonauts)
  * [Maple Leafs](http://www.reddit.com/r/leafs)
  * [Raptors](http://www.reddit.com/r/torontoraptors)
