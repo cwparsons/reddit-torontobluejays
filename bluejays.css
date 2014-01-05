@@ -10,25 +10,33 @@
  * Content - The immediate region below is purely for moderator-generated content.
  */
 
+
 /**
- * Sidebar photo.
+ * Sidebar photo
  *
- * To enable, set display: block;
- * To disable, set display: none;
+ * Configuration:
+ *   - Pre-requisite: have a side bar photo ready:
+ *        - It should be saved as a JPG (JPEG)
+ *        - Preferably should be 300px wide
+ *        - Always back up the previous image just in case!
+ *   - Upload the sidebar photo on the `edit stylesheet` page
+ *        - http://www.reddit.com/r/torontobluejays/about/stylesheet
+ *   - After uploading, you will receive a url(%%filename%%), place that in the background-image value below
+ *   - Set the padding-top to be the height of the photo
+ *   - Edit the content value in the sidebar photo text below
+ *   - Save the stylesheet
  */
-.side .titlebox:before {
-    background-image: "";
-    content: "";
-    display: block;
+.side .titlebox {
+    background-image: url(%%sidebar-photo%%);
+    padding-top: 169px;
 }
 
+/* Sidebar photo text */
+.side .titlebox:before {
+    content: "Blue Jays have signed Munenori Kawasaki to a Minor League contract with an invite to spring training.";
 
-/**
- * Special Threads
- */
-
-a.title[href*="/game_thread"] {
-    font-weight: bold;
+    /* Uncomment the line below to hide the text */
+    /* display: none; */
 }
 
 
@@ -40,19 +48,21 @@ a.title[href*="/game_thread"] {
  *     Royal Blue:      #1A459D;
  *     Dark Royal Blue: #0E2452;
  *     Navy Blue:       #052A5F;
+ *     Sky Blue:        #0476BF;
  *     White:           #FFFFFF;
  *     Red:             #EC1E31;
  *
  * Secondary
  *
- *     Light Green: #7CBD40;
- *     Green:       #009C0C;
- *     Dark Green:  #267934;
+ *     Light Green:     #7CBD40;
+ *     Green:           #009C0C;
+ *     Dark Green:      #267934;
  *
- *     Light Yellow: #FFFFCC;
- *     Yellow:       #FFCC00;
+ *     Light Yellow:    #FFFFCC;
+ *     Yellow:          #FFCC00;
  *
- *     Border Grey:  #C7C7C7;
+ *     Base Font Grey:  #333333;
+ *     Border Grey:     #C7C7C7;
  */
 
 
@@ -62,12 +72,18 @@ a.title[href*="/game_thread"] {
  */
 
 body {
+    color: #333;
     font-family: Helvetica, Arial, sans-serif;
     font-size: 11px;
 }
 
 a {
     color: #052A5F;
+}
+
+button {
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .error {
@@ -264,7 +280,7 @@ a[href$="/r/RedSox"]:before,a[href$="/r/redsox"]:before,a[href="/BOS"]:before,.f
 a[href$="/r/SFGiants"]:before,a[href$="/r/sfgiants"]:before,a[href="/SFG1"]:before,a[href="/SF1"]:before,.flair-sf-1 { background-position: 0 -840px!important; }
 a[href$="/r/TampaBayRays"]:before,a[href$="/r/tampabayrays"]:before,a[href="/TBR"]:before,a[href="/TB"]:before,.flair-tb { background-position: 0 -525px!important; }
 a[href$="/r/TexasRangers"]:before,a[href$="/r/texasrangers"]:before,a[href="/TEX"]:before,.flair-tex { background-position: 0 -546px!important; }
-a[href$="/r/TorontoBlueJays"]:before,a[href$="/r/torontobluejays"]:before,a[href="/TOR2"]:before,.flair-tor-2 { background-position: 0 -1302px!important; }
+a[href$="/r/TorontoBlueJays"]:before,a[href$="/r/torontobluejays"]:before,a[href="/TOR2"]:before,.flair-tor-2 { background-position: 0 -1303px!important; }
 a[href$="/r/WahoosTipi"]:before,a[href$="/r/wahoostipi"]:before,a[href="/CLE1"]:before,.flair-cle-1 { background-position: 0 -1260px!important; }
 a[href$="/r/WhiteSox"]:before,a[href$="/r/whitesox"]:before,a[href="/CHW"]:before,a[href="/CWS"]:before,.flair-cws { background-position: 0 -168px!important; }
 
@@ -363,11 +379,11 @@ a[href$="/r/WhiteSox"]:before,a[href$="/r/whitesox"]:before,a[href="/CHW"]:befor
 }
 
     #header .tabmenu li a:hover {
-        background-color: #8D96A8; /* rgba(255, 255, 255, 0.5) */
+        background-color: #0476BF;
     }
 
     #header .tabmenu li a:active {
-        background-color: #5F6B8C; /* rgba(255, 255, 255, 0.3) */
+        background-color: #052A5F;
     }
 
 #header .tabmenu li.selected a,
@@ -378,11 +394,12 @@ a[href$="/r/WhiteSox"]:before,a[href$="/r/whitesox"]:before,a[href="/CHW"]:befor
     color: #052A5F;
 }
 
-#header-before- .tabmenu li.selected a {
-    color: #134A8E;
+/* Generic tab menus */
+
+.tabmenu.formtab .selected a {
+    font-size: 13px;
+    padding-top: 1px;
 }
-
-
 
 /**
  * Content
@@ -456,6 +473,7 @@ a[href$="/r/WhiteSox"]:before,a[href$="/r/whitesox"]:before,a[href="/CHW"]:befor
     background-color: #7CBD40;
     border: 1px solid #267934;
 }
+
     .infobar,
     .infobar a {
         color: #FFF;
@@ -508,12 +526,12 @@ a[href$="/r/WhiteSox"]:before,a[href$="/r/whitesox"]:before,a[href="/CHW"]:befor
             color: #333;
         }
 
-    .morelink:active
+    .morelink:active,
     .sidecontentbox > a.helplink:active {
         background-color: #999999;
-        background-image: -webkit-linear-gradient(top, #999999, #CCC);
-        background-image:    -moz-linear-gradient(top, #999999, #CCC);
-        background-image:         linear-gradient(to bottom, #999999, #CCC);
+        background-image: -webkit-linear-gradient(top, #999999, #C7C7C7);
+        background-image:    -moz-linear-gradient(top, #999999, #C7C7C7);
+        background-image:         linear-gradient(to bottom, #999999, #C7C7C7);
         background-position: 0 0;
     }
 
@@ -539,48 +557,39 @@ a[href$="/r/WhiteSox"]:before,a[href$="/r/whitesox"]:before,a[href="/CHW"]:befor
     }
 
 .roundfield {
-    background-color: #F1F1F1;
+    background-color: #F5F5F5;
     border-radius: 0;
     padding: 10px;
 }
 
-    .roundfield textarea,
-    .roundfield input[type=text],
-    .roundfield input[type=url],
-    .roundfield input[type=password],
-    .roundfield input[type=number] {
-        border: 1px solid #ABABAB;
-    }
-
-        .roundfield textarea:hover,
-        .roundfield input[type=text]:hover,
-        .roundfield input[type=url]:hover,
-        .roundfield input[type=password]:hover,
-        .roundfield input[type=number]:hover {
-            border: 1px solid #92C0E0;
-        }
-
-        .roundfield textarea:focus,
-        .roundfield input[type=text]:focus,
-        .roundfield input[type=url]:focus,
-        .roundfield input[type=password]:focus,
-        .roundfield input[type=number]:focus {
-            border: 1px solid #2A8DD4;
-            outline: 0;
-        }
-
 #url-field .title-status {
-    color: #bf0000;
+    color: #EC1E31;
 }
 
 .gold-accent {
-    border-color: #FFD600;
+    border-color: #FFCC00;
 }
 
 .content.submit .info-notice {
-    border-color: #2A8DD4;
+    border-color: #0476BF;
 }
 
+
+/**
+ * Sidebar - Photo
+ */
+
+.side .titlebox {
+    background-repeat: no-repeat;
+}
+
+.side .titlebox:before {
+    background: #052A5F;
+    color: #FFF;
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px 12px;
+}
 
 
 /**
@@ -615,7 +624,7 @@ a[href$="/r/WhiteSox"]:before,a[href$="/r/whitesox"]:before,a[href="/CHW"]:befor
         display: inline;
         font-size: 12px;
         font-weight: normal;
-        color: #111;
+        color: #333;
     }
 
     .linkinfo time {
@@ -671,6 +680,7 @@ a[href$="/r/WhiteSox"]:before,a[href$="/r/whitesox"]:before,a[href="/CHW"]:befor
     background-image: url(%%wordmark-300%%);
     height: 28px;
     margin-bottom: 10px;
+    margin-left: 0;
     text-indent: -9999em;
     width: 300px;
 }
@@ -774,11 +784,12 @@ a[href$="/r/WhiteSox"]:before,a[href$="/r/whitesox"]:before,a[href="/CHW"]:befor
         }
 
             .side .titlebox blockquote:first-child li:hover {
-                background-color: #8D96A8;
+                background-color: #E6E6E6;
+                color: #052A5F;
             }
 
     .side .titlebox blockquote:first-child li ul {
-        background-color: #8D96A8;
+        background-color: #E6E6E6;
         display: none;
         min-width: 145px;
         position: absolute;
@@ -793,6 +804,7 @@ a[href$="/r/WhiteSox"]:before,a[href$="/r/whitesox"]:before,a[href="/CHW"]:befor
 
         .side .titlebox blockquote:first-child li ul li {
             display: block;
+            color: #052A5F;
         }
 
         .side .titlebox blockquote:first-child li ul a {
@@ -802,7 +814,7 @@ a[href$="/r/WhiteSox"]:before,a[href$="/r/whitesox"]:before,a[href="/CHW"]:befor
         }
 
             .side .titlebox blockquote:first-child li ul a:hover {
-                background-color: #C1CDE5;
+                background-color: #F5F5F5;
             }
 
 
@@ -933,6 +945,7 @@ a[href$="/r/WhiteSox"]:before,a[href$="/r/whitesox"]:before,a[href="/CHW"]:befor
  * Sidebar - Create a subreddit
  */
 
+/* Hide the create a subreddit button and info */
 .sidebox.create {
     display: none;
 }
@@ -952,7 +965,7 @@ a[href$="/r/WhiteSox"]:before,a[href$="/r/whitesox"]:before,a[href="/CHW"]:befor
     }
 
 .link {
-    border-left: 5px solid #B8B8B8;
+    border-left: 5px solid #999;
     margin: 10px;
     overflow: visible;
     padding: 10px;
@@ -960,24 +973,22 @@ a[href$="/r/WhiteSox"]:before,a[href$="/r/whitesox"]:before,a[href="/CHW"]:befor
     position: relative;
 }
 
-    .link a.title[href*="/game_thread"]:before {
-        background: #EC1E31;
-        bottom: 0;
-        content: "";
-        display: block;
-        left: -5px;
-        position: absolute;
-        top: 0;
-        width: 5px;
+    .link.linkflair .linkflairlabel {
+        display: none;
+    }
+
+    .link.linkflair .flairselector .linkflairlabel {
+        display: inline-block;
+        margin: 3px;
     }
 
     .link.even {
-        background: #F9F9F9;
+        background: #F5F5F5;
     }
 
     .link:hover {
         border-left: 5px solid #052A5F;
-        background-color: #F0F0F0 !important;
+        background-color: #FBFBFB !important;
     }
 
     .link.stickied {
@@ -990,13 +1001,26 @@ a[href$="/r/WhiteSox"]:before,a[href$="/r/whitesox"]:before,a[href="/CHW"]:befor
         }
 
     .link.last-clicked {
-        border: 1px solid #B8B8B8;
-        border-left: 5px solid #B8B8B8;
+        border: 1px solid #C7C7C7;
+        border-left: 5px solid #C7C7C7;
+        overflow: visible;
     }
 
-    .link.last-clicked:hover {
-        border: 1px solid #052A5F;
-        border-left: 5px solid #052A5F;
+        .link.last-clicked:not(.linkflair):hover {
+            border: 1px solid #052A5F;
+            border-left: 5px solid #052A5F;
+        }
+
+    .link.linkflair-gamethread {
+        border-left: 5px solid #EC1E31;
+    }
+
+    .link.linkflair-weeklythread {
+        border-left: 5px solid #7CBD40;
+    }
+
+    .link.linkflair-announcement {
+        border-left: 5px solid #FFCC00;
     }
 
     .link .score.likes,
@@ -1009,21 +1033,29 @@ a[href$="/r/WhiteSox"]:before,a[href$="/r/whitesox"]:before,a[href="/CHW"]:befor
         color: #052A5F;
     }
 
-.thing .title {
+.link .title {
     color: #1A459D;
 }
 
-    .thing .title:hover {
-        color: #112e66;
+    .link.linkflair .title {
+        font-weight: bold;
     }
 
-    .thing .title:active {
-        color: #0d224d;
+    .link .title:hover {
+        color: #052A5F;
     }
+
+    .link .title:active {
+        color: #0E2452;
+    }
+
+.nsfw-stamp acronym {
+    color: #EC1E31;
+}
 
 .entry .buttons li a,
 .entry .buttons li .redditSingleClick {
-    color: #CCC;
+    color: #C7C7C7;
 }
 
     .entry .buttons li a[onclick="return reply(this)"],
@@ -1031,7 +1063,7 @@ a[href$="/r/WhiteSox"]:before,a[href$="/r/whitesox"]:before,a[href="/CHW"]:befor
     .comment .entry:hover .buttons li a,
     .link:hover .entry .buttons li a,
     .link:hover .entry .buttons li .redditSingleClick {
-        color: #888;
+        color: #999;
     }
 
 .tagline {
@@ -1046,6 +1078,15 @@ a[href$="/r/WhiteSox"]:before,a[href$="/r/whitesox"]:before,a[href="/CHW"]:befor
     margin-left: 5px;
 }
 
+#suggested-reddits ul {
+    margin-top: 10px;
+}
+
+#suggested-reddits li {
+    display: inline-block;
+    overflow: hidden;
+    width: 24%;
+}
 
 
 /**
@@ -1178,9 +1219,9 @@ a[href$="/r/WhiteSox"]:before,a[href$="/r/whitesox"]:before,a[href="/CHW"]:befor
 
     .md table th {
         background-color: #FBFBFB;
-        background-image: -webkit-linear-gradient(top,#FBFBFB,#EAEAEA);
-        background-image:    -moz-linear-gradient(top,#FBFBFB,#EAEAEA);
-        background-image:         linear-gradient(tobottom,#FBFBFB,#EAEAEA);
+        background-image: -webkit-linear-gradient(top, #FBFBFB, #EAEAEA);
+        background-image:    -moz-linear-gradient(top, #FBFBFB, #EAEAEA);
+        background-image:         linear-gradient(to bottom, #FBFBFB, #EAEAEA);
         border: 3px solid #052A5F;
         border-left: 0;
         border-right: 0;
@@ -1196,7 +1237,7 @@ a[href$="/r/WhiteSox"]:before,a[href$="/r/whitesox"]:before,a[href="/CHW"]:befor
     }
 
     .md table tr:hover td {
-        background-color: #F0F0F0;
+        background-color: #FBFBFB;
     }
 
     .md table td:empty {
@@ -1242,6 +1283,7 @@ a[href$="/r/WhiteSox"]:before,a[href$="/r/whitesox"]:before,a[href="/CHW"]:befor
 
 .content .md h6 {
     font-size: 12px;
+    font-weight: bold;
 }
 
 .content .md h1,
@@ -1257,7 +1299,7 @@ a[href$="/r/WhiteSox"]:before,a[href$="/r/whitesox"]:before,a[href="/CHW"]:befor
 .content .md h2,
 .content .md h3 {
     margin-top: 20px;
-    margin-bottom: 10px;    
+    margin-bottom: 10px;
 }
 
 .content .md h4,
@@ -1311,3 +1353,7 @@ a[href$="/r/WhiteSox"]:before,a[href$="/r/whitesox"]:before,a[href="/CHW"]:befor
     .markdownEditor > a b {
         margin-left: 0;
     }
+
+.NERPageMarker {
+    border-radius: 0 !important;
+}
