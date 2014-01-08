@@ -1,0 +1,570 @@
+/* Jays fans */
+div.titlebox span.word {
+    display: none
+    }
+div.titlebox span.number:after {
+    content: " Jays fans"
+    }
+
+/* Captains */
+.sidecontentbox h1:not(:first-child) {
+    font-size: 0pt !important
+    }
+.sidecontentbox h1:not(:first-child):after {
+    font-size: 10pt !important;
+    content: "Captains"
+    }
+
+/* background image */
+body {
+    background: url(%%jays-logo-bg-new%%) no-repeat fixed center center
+    }
+
+/* header styling */
+#header {
+    border-bottom: 1px solid #BBBBBB;
+    position: relative;
+    background-color: #FFFFFF;
+    background-image: url(%%bjhead6%%);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: right top;
+    }
+#header-bottom-right, .tabmenu li a {
+    background-color: #FFFFFF;
+    }
+#header-bottom-right a, .tabmenu li a {
+    color: #1362A4;
+    }
+
+/* Jays logo side banner */
+.side {
+    /* padding-top = image height */
+    padding: 92px 0 0 0;
+    margin-top: 12px;
+    background-image: url(%%RTBJ%%);
+    background-repeat: no-repeat;
+    background-position: center top;
+    }
+
+/* :D */
+
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- Flairs -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+
+.flair {
+    font-size: 10px;
+    background: transparent url(%%Numbers%%) no-repeat;
+    border: 0;
+    padding: 0 0 0 26px;
+    background-position: 0px 0px;
+    display: inline-block;
+    vertical-align: middle; 
+    height: 20px;
+    }
+
+/* hide flair on submissions (i.e. show only beside comments) */
+.link .flair { display: none !important; }
+
+/* MLB Logo */
+.flair-MLB {
+  background: transparent url(%%mlb%%) no-repeat;
+    height: 32px;
+    padding-left: 60px;
+    background-position: 0px 0px
+    }
+
+.flair-Logo1 {
+  background: transparent url(%%Logos%%) no-repeat;
+    height: 26px;
+    padding-left: 30px;
+    background-position: 0px 0px
+    }
+
+.flair-Logo2 {
+  background: transparent url(%%Logos%%);
+    height: 26px;
+    padding-left: 30px;
+    background-position: 0px 32px
+    }
+
+.flair-Logo3 {
+  background: transparent url(%%Logos%%);
+    height: 26px;
+    padding-left: 30px;
+    background-position: 0px 58px
+    }
+
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- Numbers -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+
+.flair-0 {
+    background-position: 0px 0px
+    }
+.flair-1 {
+    background-position: 0px -20px
+    }
+.flair-2 {
+    background-position: 0px -40px
+    }
+.flair-3 {
+    background-position: 0px -60px
+    }
+.flair-4 {
+    background-position: 0px -80px
+    }
+.flair-5 {
+    background-position: 0px -100px
+    }
+.flair-6 {
+    background-position: 0px -120px
+    }
+.flair-7 {
+    background-position: 0px -140px
+    }
+.flair-8 {
+    background-position: 0px -160px
+    }
+.flair-9 {
+    background-position: 0px -180px
+    }
+.flair-10 {
+    background-position: 0px -200px
+    }
+.flair-11 {
+    background-position: 0px -220px
+    }
+.flair-12 {
+    background-position: 0px -240px
+    }
+.flair-13 {
+    background-position: 0px -260px
+    }
+.flair-14 {
+    background-position: 0px -280px
+    }
+.flair-15 {
+    background-position: 0px -300px
+    }
+.flair-16 {
+    background-position: 0px -320px
+    }
+.flair-17 {
+    background-position: 0px -340px
+    }
+.flair-18 {
+    background-position: 0px -360px
+    }
+.flair-19 {
+    background-position: 0px -380px
+    }
+.flair-20 {
+    background-position: 0px -400px
+    }
+.flair-21 {
+    background-position: 0px -420px
+    }
+.flair-22 {
+    background-position: 0px -440px
+    }
+.flair-23 {
+    background-position: 0px -460px
+    }
+.flair-24 {
+    background-position: 0px -480px
+    }
+.flair-25 {
+    background-position: 0px -500px
+    }
+.flair-26 {
+    background-position: 0px -520px
+    }
+.flair-27 {
+    background-position: 0px -540px
+    }
+.flair-28 {
+    background-position: 0px -560px
+    }
+.flair-29 {
+    background-position: 0px -580px
+    }
+.flair-30 {
+    background-position: 0px -600px
+    }
+.flair-31 {
+    background-position: 0px -620px
+    }
+.flair-32 {
+    background-position: 0px -640px
+    }
+.flair-33 {
+    background-position: 0px -660px
+    }
+.flair-34 {
+    background-position: 0px -680px
+    }
+.flair-35 {
+    background-position: 0px -700px
+    }
+.flair-36 {
+    background-position: 0px -720px
+    }
+.flair-37 {
+    background-position: 0px -740px
+    }
+.flair-38 {
+    background-position: 0px -760px
+    }
+.flair-39 {
+    background-position: 0px -780px
+    }
+.flair-40 {
+    background-position: 0px -800px
+    }
+.flair-41 {
+    background-position: 0px -820px
+    }
+.flair-42 {
+    background-position: 0px -840px
+    }
+.flair-43 {
+    background-position: 0px -860px
+    }
+.flair-44 {
+    background-position: 0px -880px
+    }
+.flair-45 {
+    background-position: 0px -900px
+    }
+.flair-46 {
+    background-position: 0px -920px
+    }
+.flair-47 {
+    background-position: 0px -940px
+    }
+.flair-48 {
+    background-position: 0px -960px
+    }
+.flair-49 {
+    background-position: 0px -980px
+    }
+.flair-50 {
+    background-position: 0px -1000px
+    }
+.flair-51 {
+    background-position: 0px -1020px
+    }
+.flair-52 {
+    background-position: 0px -1040px
+    }
+.flair-53 {
+    background-position: 0px -1060px
+    }
+.flair-54 {
+    background-position: 0px -1080px
+    }
+.flair-55 {
+    background-position: 0px -1100px
+    }
+.flair-56 {
+    background-position: 0px -1120px
+    }
+.flair-57 {
+    background-position: 0px -1140px
+    }
+.flair-58 {
+    background-position: 0px -1160px
+    }
+.flair-59 {
+    background-position: 0px -1180px
+    }
+.flair-60 {
+    background-position: 0px -1200px
+    }
+.flair-61 {
+    background-position: 0px -1220px
+    }
+.flair-62 {
+    background-position: 0px -1240px
+    }
+.flair-63 {
+    background-position: 0px -1260px
+    }
+.flair-64 {
+    background-position: 0px -1280px
+    }
+.flair-65 {
+    background-position: 0px -1300px
+    }
+.flair-66 {
+    background-position: 0px -1320px
+    }
+.flair-67 {
+    background-position: 0px -1340px
+    }
+.flair-68 {
+    background-position: 0px -1360px
+    }
+.flair-69 {
+    background-position: 0px -1380px
+    }
+.flair-70 {
+    background-position: 0px -1400px
+    }
+.flair-71 {
+    background-position: 0px -1420px
+    }
+.flair-72 {
+    background-position: 0px -1440px
+    }
+.flair-73 {
+    background-position: 0px -1460px
+    }
+.flair-74 {
+    background-position: 0px -1480px
+    }
+.flair-75 {
+    background-position: 0px -1500px
+    }
+.flair-76 {
+    background-position: 0px -1520px
+    }
+.flair-77 {
+    background-position: 0px -1540px
+    }
+.flair-78 {
+    background-position: 0px -1560px
+    }
+.flair-79 {
+    background-position: 0px -1580px
+    }
+.flair-80 {
+    background-position: 0px -1600px
+    }
+.flair-81 {
+    background-position: 0px -1620px
+    }
+.flair-82 {
+    background-position: 0px -1640px
+    }
+.flair-83 {
+    background-position: 0px -1660px
+    }
+.flair-84 {
+    background-position: 0px -1680px
+    }
+.flair-85 {
+    background-position: 0px -1700px
+    }
+.flair-86 {
+    background-position: 0px -1720px
+    }
+.flair-87 {
+    background-position: 0px -1740px
+    }
+.flair-88 {
+    background-position: 0px -1760px
+    }
+.flair-89 {
+    background-position: 0px -1780px
+    }
+.flair-90 {
+    background-position: 0px -1800px
+    }
+.flair-91 {
+    background-position: 0px -1820px
+    }
+.flair-92 {
+    background-position: 0px -1840px
+    }
+.flair-93 {
+    background-position: 0px -1860px
+    }
+.flair-94 {
+    background-position: 0px -1880px
+    }
+.flair-95 {
+    background-position: 0px -1900px
+    }
+.flair-96 {
+    background-position: 0px -1920px
+    }
+.flair-97 {
+    background-position: 0px -1940px
+    }
+.flair-98 {
+    background-position: 0px -1960px
+    }
+.flair-99 {
+    background-position: 0px -1980px
+    }
+.flair-100 {
+    background-position: 0px -2000px
+    }
+
+/* Picture of the Week */
+/* h1.redditname {
+    width: 300px;
+    height: 220px;
+    background: url(%%Feastmode%%) no-repeat;
+    padding: 0px !important;
+    padding-bottom: 15px !important;
+    margin: 0px !important;
+    margin-top: 0px !important;
+    margin-left: 0px !important;
+    margin-bottom: 0px !important;
+    text-indent: -3000px
+    }
+*/
+
+/* Picture of the Week */
+/* how to update: */
+/* 1. resize new image to 300x225 */
+/* 2. upload it and name it 'picoftheweek' */
+/* 3. change the caption below */
+.listing-page .titlebox {
+    background-image: url(%%picoftheweek%%);
+    background-position: center top;
+    background-repeat: no-repeat;
+    padding-top: 209px
+    }
+.listing-page .titlebox:before {
+    content: " Picture of the Week: Feast Mode";
+    font-weight: bold;
+    color: #FFF;
+    background-color: #104A8E;
+    }
+.titlebox h1 {
+    margin-top: 5px;
+}
+
+/* Team menus at the top */
+/*sticky menu bar*/
+/*hack to enable positioning of child elements*/
+.titlebox form {
+    position: static
+    }
+/*turns top quote in sidebar into menu container*/
+.titlebox blockquote:first-child {
+    border-left: none;
+    position: absolute;
+    z-index: 9999;
+    top: 13px;
+    left: 119px
+    }
+/*turns first paragraph into menu title*/
+.titlebox blockquote:first-child p:first-child {
+    margin-top: 1px;
+    padding: 1px;
+    float: left;
+    font-size: 11px;
+    font-weight: bold;
+    color: black;
+    display: inline-block;
+    margin-right: .5em;
+    border-radius: 2px;
+    cursor: default;
+    color: #FFF
+    }
+/*turns the lists into menus*/
+.titlebox blockquote ul {
+    float: right;
+    padding: 1px;
+    border: 1px solid #2e2e2e;
+    background-color: #E5E5E5 !important;
+    margin: 0px;
+    margin-left: 4px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px
+    }
+.titlebox blockquote ul:hover {
+    border: 1px solid #EFF7FF;
+    background-color: transparent !important
+    }
+.titlebox blockquote ul li {
+    display: none;
+    padding: 2px;
+    text-align: center;
+    font-weight: bold;
+    color: #790001
+    }
+.titlebox blockquote li a {
+    display: block;
+    font-weight: normal;
+    text-transform: none !important;
+    color: black
+    }
+.titlebox blockquote ul li:first-child, .titlebox blockquote ul:hover li {
+    display: block;
+    background-color: transparent
+    }
+.titlebox blockquote li:first-child {
+    font-size: 12px;
+    font-weight: bold;
+    color: gray;
+    background: transparent;
+    display: inline-block;
+    border: 0px solid #dbdbdb;
+    border-radius: 5px;
+    cursor: default
+    }
+/*styling menu items*/
+.titlebox blockquote:first-child ul li:hover {
+    background: #DBDBDB;
+    border-radius: 5px
+    }
+.titlebox blockquote:first-child a {
+    padding: 3px;
+    font-weight: bold;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-top: 0px
+    }
+.titlebox blockquote li a:hover {
+    color: #000
+    }
+/*custom size for menu sections*/
+.titlebox blockquote ul:nth-of-type(1) {
+    background-color: #E5E5E5 !important
+    }
+.titlebox blockquote ul:nth-of-type(2) {
+    background-color: #E5E5E5 !important
+    }
+.titlebox blockquote ul:nth-of-type(3) {
+    background-color: #E5E5E5 !important
+    }
+
+
+/* game thread icons */
+a.title[href*="/game_thread"]:before {
+    background-image: url(%%game-thread-ball2%%);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    content: "";
+    display: inline-block;
+    height: 32px;
+    width: 34px;
+}
+/* a.title[href*="/game_thread"] {
+  font-weight: bold;
+}
+
+/* Downvote Message */
+
+.arrow.down:hover:before {
+position: fixed;
+display: block;
+z-index: 1000;
+padding: 5px 0;
+border-top: 1px solid #fff;
+content: "Avoid downvotting based on emotion or disagreement";
+text-align: center;
+bottom: 0;
+width: 100%;
+left: 0;
+background-color: #2671c4;
+opacity:0.8;
+
+color: #FFFFFF;
+text-shadow: 0 -1px 1px #555;
+font-size: 16px;
+box-shadow: 1px 1px #808285;
+}
