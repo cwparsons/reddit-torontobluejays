@@ -1,6 +1,7 @@
 /*!
- * bluejays.css - The CSS file for /r/torontobluejays
+ * bluejays.css - A stylesheet for reddit.com/r/torontobluejays
  * Author: Christopher Parsons <cwlparsons@gmail.com>
+ * Repository: https://github.com/cwparsons/reddit-torontobluejays
  * MIT License
  */
 
@@ -40,63 +41,6 @@
 }
 
 
-/**
- * Sub-reddit styling
- *
- * Primary
- *
- *     Royal Blue:      #1A459D;
- *     Dark Royal Blue: #0E2452;
- *     Navy Blue:       #052A5F;
- *     Sky Blue:        #0476BF;
- *     White:           #FFFFFF;
- *     Red:             #EC1E31;
- *
- * Secondary
- *
- *     Light Green:     #7CBD40;
- *     Green:           #009C0C;
- *     Dark Green:      #267934;
- *
- *     Light Yellow:    #FFFFCC;
- *     Yellow:          #FFCC00;
- *
- *     Base Font Grey:  #333333;
- *     Border Grey:     #C7C7C7;
- */
-
-
-
-/**
- * General
- */
-
-body {
-    color: #333;
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 11px;
-}
-
-a {
-    color: #052A5F;
-}
-
-button {
-    margin-left: 0;
-    margin-right: 0;
-}
-
-.error {
-    color: #EC1E31;
-}
-
-/* Colourized reddit sprite */
-.arrow.upmod,
-.arrow.downmod {
-    background-image :url(%%sprite%%) !important;
-}
-
-
 
 /**
  * Flair
@@ -118,7 +62,7 @@ button {
     margin-left: 4px;
 }
 
-.flair-0 {  background-position: 0px -2px;    }
+.flair-0 {  background-position: 0px -2px;   }
 .flair-1 {  background-position: 0px -22px;  }
 .flair-2 {  background-position: 0px -42px;  }
 .flair-3 {  background-position: 0px -62px;  }
@@ -206,6 +150,7 @@ button {
 .flair-85 { background-position: 0px -1702px; }
 .flair-86 { background-position: 0px -1722px; }
 .flair-87 { background-position: 0px -1742px; }
+.flair-88 { background-position: 0px -1762px; }
 .flair-89 { background-position: 0px -1782px; }
 .flair-90 { background-position: 0px -1802px; }
 .flair-91 { background-position: 0px -1822px; }
@@ -218,7 +163,6 @@ button {
 .flair-98 { background-position: 0px -1962px; }
 .flair-99 { background-position: 0px -1982px; }
 .flair-100 { background-position: 0px -2002px; }
-.flair-88 { background-position: 0px -1762px; }
 
 /* Blue Jays Logo flair */
 .flair-Logo1,
@@ -226,7 +170,7 @@ button {
 .flair-Logo3 {
     background: transparent url(%%flair-logo%%) no-repeat;
     height: 26px;
-    padding-left: 30px;
+    width: 28px;
 }
 
 .flair-Logo1 { background-position: 0px 0px;  }
@@ -253,36 +197,95 @@ a[href$="/r/AngelsBaseball"]:before,a[href$="/r/angelsbaseball"]:before,a[href="
     width: 20px;
 }
 
-a[href$="/r/AngelsBaseball"]:before,a[href$="/r/angelsbaseball"]:before,a[href="/LAA"]:before,.flair-l,.flair-laa { background-position: 0 0!important; }
-a[href$="/r/Astros"]:before,a[href$="/r/astros"]:before,a[href="/HOU2"]:before,.flair-hou-2 { background-position: 0 -1533px!important; }
-a[href$="/r/AZDiamondbacks"]:before,a[href$="/r/azdiamondbacks"]:before,a[href="/ARI2"]:before,.flair-ari-2 { background-position: 0 -1407px!important; }
-a[href$="/r/Braves"]:before,a[href$="/r/braves"]:before,a[href="/ATL"]:before,.flair-atl { background-position: 0 -42px!important; }
-a[href$="/r/Brewers"]:before,a[href$="/r/brewers"]:before,a[href="/MIL"]:before,.flair-mil { background-position: 0 -294px!important; }
-a[href$="/r/Buccos"]:before,a[href$="/r/buccos"]:before,a[href="/PIT"]:before,.flair-pit { background-position: 0 -420px!important; }
-a[href$="/r/Cardinals"]:before,a[href$="/r/cardinals"]:before,a[href="/STL"]:before,.flair-stl { background-position: 0 -504px!important; }
-a[href$="/r/ColoradoRockies"]:before,a[href$="/r/coloradorockies"]:before,a[href="/COL"]:before,.flair-col { background-position: 0 -147px!important; }
-a[href$="/r/Cubs"]:before,a[href$="/r/cubs"]:before,a[href="/CHI"]:before,a[href="/CHC"]:before,.flair-chc { background-position: 0 -84px!important; }
-a[href$="/r/Dodgers"]:before,a[href$="/r/dodgers"]:before,a[href="/LAD2"]:before,.flair-lad-2 { background-position: 0 -1617px!important; }
-a[href$="/r/KCRoyals"]:before,a[href$="/r/kcroyals"]:before,a[href="/KCR"]:before,a[href="/KC"]:before,.flair-kc { background-position: 0 -252px!important; }
-a[href$="/r/LetsGoFish"]:before,a[href$="/r/letsgofish"]:before,a[href="/MIA"]:before,.flair-mia { background-position: 0 -1239px!important; }
-a[href$="/r/Mariners"]:before,a[href$="/r/mariners"]:before,a[href="/SEA"]:before,.flair-sea { background-position: 0 -462px!important; }
-a[href$="/r/MinnesotaTwins"]:before,a[href$="/r/minnesotatwins"]:before,a[href="/MIN"]:before,.flair-min { background-position: 0 -315px!important; }
-a[href$="/r/MotorCityKitties"]:before,a[href$="/r/motorcitykitties"]:before,a[href="/DET"]:before,.flair-det { background-position: 0 -189px!important; }
-a[href$="/r/Nationals"]:before,a[href$="/r/nationals"]:before,a[href="/WAS1"]:before,a[href="/WSH"]:before,.flair-was-1 { background-position: 0 -777px!important; }
-a[href$="/r/NewYorkMets"]:before,a[href$="/r/newyorkmets"]:before,a[href="/NYM"]:before,.flair-nym { background-position: 0 -336px!important; }
-a[href$="/r/Yankees"]:before,a[href$="/r/yankees"]:before,a[href="/NYY"]:before,.flair-nyy { background-position: 0 -357px!important; }
-a[href$="/r/OaklandAthletics"]:before,a[href$="/r/oaklandathletics"]:before,a[href="/OAK"]:before,.flair-oak { background-position: 0 -378px!important; }
-a[href$="/r/Orioles"]:before,a[href$="/r/orioles"]:before,a[href="/BAL2"]:before,.flair-bal-2 { background-position: 0 -1197px!important; }
-a[href$="/r/Padres"]:before,a[href$="/r/padres"]:before,a[href="/SDP1"]:before,a[href="/SD1"]:before,.flair-sd-1 { background-position: 0 -903px!important; }
-a[href$="/r/Phillies"]:before,a[href$="/r/phillies"]:before,a[href="/PHI"]:before,.flair-phi { background-position: 0 -399px!important; }
-a[href$="/r/Reds"]:before,a[href$="/r/reds"]:before,a[href="/CIN"]:before,.flair-cin { background-position: 0 -105px!important; }
-a[href$="/r/RedSox"]:before,a[href$="/r/redsox"]:before,a[href="/BOS"]:before,.flair-bos { background-position: 0 -63px!important; }
-a[href$="/r/SFGiants"]:before,a[href$="/r/sfgiants"]:before,a[href="/SFG1"]:before,a[href="/SF1"]:before,.flair-sf-1 { background-position: 0 -840px!important; }
-a[href$="/r/TampaBayRays"]:before,a[href$="/r/tampabayrays"]:before,a[href="/TBR"]:before,a[href="/TB"]:before,.flair-tb { background-position: 0 -525px!important; }
-a[href$="/r/TexasRangers"]:before,a[href$="/r/texasrangers"]:before,a[href="/TEX"]:before,.flair-tex { background-position: 0 -546px!important; }
-a[href$="/r/TorontoBlueJays"]:before,a[href$="/r/torontobluejays"]:before,a[href="/TOR2"]:before,.flair-tor-2 { background-position: 0 -1303px!important; }
-a[href$="/r/WahoosTipi"]:before,a[href$="/r/wahoostipi"]:before,a[href="/CLE1"]:before,.flair-cle-1 { background-position: 0 -1260px!important; }
-a[href$="/r/WhiteSox"]:before,a[href$="/r/whitesox"]:before,a[href="/CHW"]:before,a[href="/CWS"]:before,.flair-cws { background-position: 0 -168px!important; }
+a[href$="/r/AngelsBaseball"]:before,a[href$="/r/angelsbaseball"]:before,.flair-l,.flair-laa { background-position: 0 0!important; }
+a[href$="/r/Astros"]:before,a[href$="/r/astros"]:before,.flair-hou-2 { background-position: 0 -1533px!important; }
+a[href$="/r/AZDiamondbacks"]:before,a[href$="/r/azdiamondbacks"]:before,.flair-ari-2 { background-position: 0 -1407px!important; }
+a[href$="/r/Braves"]:before,a[href$="/r/braves"]:before,.flair-atl { background-position: 0 -42px!important; }
+a[href$="/r/Brewers"]:before,a[href$="/r/brewers"]:before,.flair-mil { background-position: 0 -294px!important; }
+a[href$="/r/Buccos"]:before,a[href$="/r/buccos"]:before,.flair-pit { background-position: 0 -420px!important; }
+a[href$="/r/Cardinals"]:before,a[href$="/r/cardinals"]:before,.flair-stl { background-position: 0 -504px!important; }
+a[href$="/r/ColoradoRockies"]:before,a[href$="/r/coloradorockies"]:before,.flair-col { background-position: 0 -147px!important; }
+a[href$="/r/Cubs"]:before,a[href$="/r/cubs"]:before,.flair-chc { background-position: 0 -84px!important; }
+a[href$="/r/Dodgers"]:before,a[href$="/r/dodgers"]:before,.flair-lad-2 { background-position: 0 -1617px!important; }
+a[href$="/r/KCRoyals"]:before,a[href$="/r/kcroyals"]:before,.flair-kc { background-position: 0 -252px!important; }
+a[href$="/r/LetsGoFish"]:before,a[href$="/r/letsgofish"]:before,.flair-mia { background-position: 0 -1239px!important; }
+a[href$="/r/Mariners"]:before,a[href$="/r/mariners"]:before,.flair-sea { background-position: 0 -462px!important; }
+a[href$="/r/MinnesotaTwins"]:before,a[href$="/r/minnesotatwins"]:before,.flair-min { background-position: 0 -315px!important; }
+a[href$="/r/MotorCityKitties"]:before,a[href$="/r/motorcitykitties"]:before,.flair-det { background-position: 0 -189px!important; }
+a[href$="/r/Nationals"]:before,a[href$="/r/nationals"]:before,.flair-was-1 { background-position: 0 -777px!important; }
+a[href$="/r/NewYorkMets"]:before,a[href$="/r/newyorkmets"]:before,.flair-nym { background-position: 0 -336px!important; }
+a[href$="/r/Yankees"]:before,a[href$="/r/yankees"]:before,.flair-nyy { background-position: 0 -357px!important; }
+a[href$="/r/OaklandAthletics"]:before,a[href$="/r/oaklandathletics"]:before,.flair-oak { background-position: 0 -378px!important; }
+a[href$="/r/Orioles"]:before,a[href$="/r/orioles"]:before,.flair-bal-2 { background-position: 0 -1197px!important; }
+a[href$="/r/Padres"]:before,a[href$="/r/padres"]:before,.flair-sd-1 { background-position: 0 -903px!important; }
+a[href$="/r/Phillies"]:before,a[href$="/r/phillies"]:before,.flair-phi { background-position: 0 -399px!important; }
+a[href$="/r/Reds"]:before,a[href$="/r/reds"]:before,.flair-cin { background-position: 0 -105px!important; }
+a[href$="/r/RedSox"]:before,a[href$="/r/redsox"]:before,.flair-bos { background-position: 0 -63px!important; }
+a[href$="/r/SFGiants"]:before,a[href$="/r/sfgiants"]:before,.flair-sf-1 { background-position: 0 -840px!important; }
+a[href$="/r/TampaBayRays"]:before,a[href$="/r/tampabayrays"]:before,.flair-tb { background-position: 0 -525px!important; }
+a[href$="/r/TexasRangers"]:before,a[href$="/r/texasrangers"]:before,.flair-tex { background-position: 0 -546px!important; }
+a[href$="/r/TorontoBlueJays"]:before,a[href$="/r/torontobluejays"]:before,.flair-tor-2 { background-position: 0 -1303px!important; }
+a[href$="/r/WahoosTipi"]:before,a[href$="/r/wahoostipi"]:before,.flair-cle-1 { background-position: 0 -1260px!important; }
+a[href$="/r/WhiteSox"]:before,a[href$="/r/whitesox"]:before,.flair-cws { background-position: 0 -168px!important; }
+
+
+
+/**
+ * Sub-reddit styling
+ *
+ * Primary
+ *
+ *     Royal Blue:      #1A459D;
+ *     Dark Royal Blue: #0E2452;
+ *     Navy Blue:       #052A5F;
+ *     Sky Blue:        #0476BF;
+ *     White:           #FFFFFF;
+ *     Red:             #EC1E31;
+ *
+ * Secondary
+ *
+ *     Light Green:     #7CBD40;
+ *     Green:           #009C0C;
+ *     Dark Green:      #267934;
+ *
+ *     Light Yellow:    #FFFFCC;
+ *     Yellow:          #FFCC00;
+ *     Dark Yellow:     #AA8800;
+ *
+ *     Base Font Grey:  #333333;
+ *     Border Grey:     #C7C7C7;
+ */
+
+
+
+/**
+ * General
+ */
+
+body {
+    color: #333;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 11px;
+}
+
+a {
+    color: #052A5F;
+}
+
+button {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.error {
+    color: #EC1E31;
+}
+
+/* Colourized reddit sprite */
+.arrow.upmod,
+.arrow.downmod {
+    background-image :url(%%sprite%%) !important;
+}
 
 
 
@@ -348,7 +351,6 @@ a[href$="/r/WhiteSox"]:before,a[href$="/r/whitesox"]:before,a[href="/CHW"]:befor
 }
 
     .pagename a {
-        background: url(%%wordmark%%);
         display: inline-block;
         height: 50px;
         text-indent: -9999em;
@@ -401,6 +403,8 @@ a[href$="/r/WhiteSox"]:before,a[href$="/r/whitesox"]:before,a[href="/CHW"]:befor
     padding-top: 1px;
 }
 
+
+
 /**
  * Content
  */
@@ -439,6 +443,10 @@ a[href$="/r/WhiteSox"]:before,a[href$="/r/whitesox"]:before,a[href="/CHW"]:befor
     font-weight: bold;
     text-align: center;
     padding: 4px 8px;
+}
+
+.side .md a:hover {
+    text-decoration: underline;
 }
 
 
@@ -567,12 +575,13 @@ a[href$="/r/WhiteSox"]:before,a[href$="/r/whitesox"]:before,a[href="/CHW"]:befor
 }
 
 .gold-accent {
-    border-color: #FFCC00;
+    border-color: #AA8800;
 }
 
 .content.submit .info-notice {
     border-color: #0476BF;
 }
+
 
 
 /**
@@ -590,6 +599,7 @@ a[href$="/r/WhiteSox"]:before,a[href$="/r/whitesox"]:before,a[href="/CHW"]:befor
     margin-bottom: 10px;
     padding: 10px 12px;
 }
+
 
 
 /**
@@ -666,8 +676,10 @@ a[href$="/r/WhiteSox"]:before,a[href$="/r/whitesox"]:before,a[href="/CHW"]:befor
     }
 
         .linkinfo .shortlink input {
+            border: 1px solid #C7C7C7;
             font-size: 13px;
             margin: 0 auto;
+            text-align: center;
         }
 
 
@@ -815,6 +827,7 @@ a[href$="/r/WhiteSox"]:before,a[href$="/r/whitesox"]:before,a[href="/CHW"]:befor
 
             .side .titlebox blockquote:first-child li ul a:hover {
                 background-color: #F5F5F5;
+                text-decoration: none;
             }
 
 
@@ -964,6 +977,10 @@ a[href$="/r/WhiteSox"]:before,a[href$="/r/whitesox"]:before,a[href="/CHW"]:befor
         color: #333;
     }
 
+.arrow {
+    margin: 3px;
+}
+
 .link {
     border-left: 5px solid #999;
     margin: 10px;
@@ -989,6 +1006,10 @@ a[href$="/r/WhiteSox"]:before,a[href$="/r/whitesox"]:before,a[href="/CHW"]:befor
     .link:hover {
         border-left: 5px solid #052A5F;
         background-color: #FBFBFB !important;
+    }
+
+    .link .rank {
+        margin-top: 19px;
     }
 
     .link.stickied {
@@ -1070,6 +1091,8 @@ a[href$="/r/WhiteSox"]:before,a[href$="/r/whitesox"]:before,a[href="/CHW"]:befor
     font-size: 11px;
 }
 
+
+
 /**
  * Pages - Submit Page
  */
@@ -1089,6 +1112,7 @@ a[href$="/r/WhiteSox"]:before,a[href$="/r/whitesox"]:before,a[href="/CHW"]:befor
 }
 
 
+
 /**
  * Pages - Comment page
  */
@@ -1105,13 +1129,28 @@ a[href$="/r/WhiteSox"]:before,a[href$="/r/whitesox"]:before,a[href="/CHW"]:befor
     padding-bottom: 10px;
 }
 
+    .panestack-title a.title-button.gold {
+        background-color: #FFCC00;
+        border: 1px solid #AA8800;
+    }
+
 .content .spacer {
     margin-bottom: 10px;
 }
 
 /* Align #noresults with comment box */
 .commentarea #noresults {
-    margin-left: 13px;
+    margin-left: 10px;
+}
+
+/* Contest mode */
+.comment-area .help-hoverable {
+    font-size: 11px;
+}
+
+.gold-accent.comment-visits-box {
+    border-radius: 0;
+    margin-left: 10px;
 }
 
 /* Force [-] and [+] to be aligned when collapsed/noncollapsed */
@@ -1173,6 +1212,10 @@ a[href$="/r/WhiteSox"]:before,a[href$="/r/whitesox"]:before,a[href="/CHW"]:befor
 /* Force vertical alignment of [-], username, RES icons, flair */
 .comment .tagline > * {
     vertical-align: middle;
+}
+
+.comment .midcol {
+    width: 20px;
 }
 
 
@@ -1318,6 +1361,9 @@ a[href$="/r/WhiteSox"]:before,a[href$="/r/whitesox"]:before,a[href="/CHW"]:befor
     margin-top: 0;
 }
 
+.content .md a:hover {
+    text-decoration: underline;
+}
 
 
 /**
@@ -1355,5 +1401,16 @@ a[href$="/r/WhiteSox"]:before,a[href$="/r/whitesox"]:before,a[href="/CHW"]:befor
     }
 
 .NERPageMarker {
+    border-radius: 0 !important;
+}
+
+/* Make comment subscribe button the same size as gold */
+.RESSubscriptionButton {
+    font-size: 12px;
+    padding: 1px 5px;
+    width: auto;
+}
+
+.RESDialogSmall {
     border-radius: 0 !important;
 }
