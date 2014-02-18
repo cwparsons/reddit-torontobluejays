@@ -8,7 +8,6 @@
 * Central
 * [Chicago Cubs](http://www.reddit.com/r/Cubs)
 * [Cincinnati Reds](http://www.reddit.com/r/Reds)
-* [Houston Astros](http://www.reddit.com/r/Astros)
 * [Milwaukee Brewers](http://www.reddit.com/r/Brewers)
 * [Pittsburgh Pirates](http://www.reddit.com/r/Buccos)
 * [St. Louis Cardinals](http://www.reddit.com/r/Cardinals)
@@ -25,6 +24,7 @@
 * West
 * [Los Angeles Angels](http://www.reddit.com/r/AngelsBaseball)
 * [Oakland Athletics](http://www.reddit.com/r/oaklandathletics)
+* [Houston Astros](http://www.reddit.com/r/Astros)
 * [Seattle Mariners](http://www.reddit.com/r/Mariners)
 * [Texas Rangers](http://www.reddit.com/r/TexasRangers)
 * Central
@@ -42,6 +42,8 @@
 
 Team news, rumors, trades, discussions. 
 
+* [Official RTBJ fantasy baseball league] (http://www.reddit.com/r/Torontobluejays/comments/186jrv/rtorontobluejays_fantasy_baseball_leagues_now/)
+
 Handy links:
 
 * [Regular season schedule](http://mlb.mlb.com/schedule/index.jsp?c_id=TOR)
@@ -57,10 +59,20 @@ Fan sites and blogs:
 * [Batter's Box](http://www.battersbox.ca/)
 * [The Eye in the Skydome](http://eyeintheskydome.blogspot.com)
 * [Blue Jays Nation](http://www.bluejaysnation.com)
-
+* [Blue Jays Aggregator (Archives of podcasts and radio and other news)](http://bluejaysaggr.com)
+* [The Blue Jays Dugout](http://thebluejaysdugout.com)
+* [The Blue Jay Hunter] (http://www.bluejayhunter.com)
+* [Jays Journal] (http://jaysjournal.com)
 
 Other subreddits you may be interested in:
 
 * [/r/baseball](http://www.reddit.com/r/baseball/)
 * [/r/Toronto](http://www.reddit.com/r/toronto/)
-* [/r/leafs](http://www.reddit.com/r/leafs/)
+* [/r/leafs](http://www.reddit.com/r/leafs/)  
+* [/r/torontoraptors](http://www.reddit.com/r/torontoraptors)
+
+Fan submitted content:
+
+* [The Sportsnet Blue Jays intro theme music](http://www.reddit.com/r/Torontobluejays/comments/wz414/odd_request_the_theme_music_for_the_2012_blue/c5htfz4?context=3)
+
+Toronto
