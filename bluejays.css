@@ -51,7 +51,7 @@
     background-position: 0px 0px;
     border: 0;
     display: inline-block;
-    font-size: 10px;
+    font-size: 11px !important;
     height: 20px;
     vertical-align: middle;
     width: 20px;
@@ -61,6 +61,12 @@
     line-height: 20px;
     padding-left: 28px;
     width: auto;
+}
+
+.flair[title].flair-Logo1,
+.flair[title].flair-Logo2,
+.flair[title].flair-Logo3 {
+    padding-left: 32px;
 }
 
 /* RES might add .voteWeight, which causes margin issues */
@@ -1107,6 +1113,10 @@ button {
 .tagline,
 .comment .score {
     font-size: 11px;
+}
+
+.edited-timestamp[title]:after {
+    font-size: 11px !important;
 }
 
 
