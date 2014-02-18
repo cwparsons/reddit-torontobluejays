@@ -37,7 +37,7 @@
     content: "Blue Jays have signed Munenori Kawasaki to a Minor League contract with an invite to spring training.";
 
     /* Uncomment the line below to hide the text */
-    display: none; 
+    /*display: none !important;*/
 }
 
 
