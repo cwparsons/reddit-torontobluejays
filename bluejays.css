@@ -305,6 +305,10 @@ button {
     line-height: 24px;
 }
 
+#sr-header-area a {
+    line-height: 24px;
+}
+
 .dropdown.srdrop .selected {
     background-position: 100% 2px;
 }
@@ -1100,10 +1104,10 @@ button {
         color: #999;
     }
 
-.tagline {
+.tagline,
+.comment .score {
     font-size: 11px;
 }
-
 
 
 /**
@@ -1223,9 +1227,9 @@ button {
     }
 
 /* Force vertical alignment of [-], username, RES icons, flair */
-.comment .tagline > * {
+/*.comment .tagline > * {
     vertical-align: middle;
-}
+}*/
 
 .comment .midcol {
     width: 20px;
