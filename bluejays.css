@@ -37,7 +37,7 @@
     content: "Blue Jays have signed Munenori Kawasaki to a Minor League contract with an invite to spring training.";
 
     /* Uncomment the line below to hide the text */
-    /* display: none; */
+    display: none; 
 }
 
 
@@ -55,6 +55,12 @@
     height: 20px;
     vertical-align: middle;
     width: 20px;
+}
+
+.flair[title] {
+    line-height: 20px;
+    padding-left: 28px;
+    width: auto;
 }
 
 /* RES might add .voteWeight, which causes margin issues */
@@ -351,6 +357,7 @@ button {
 }
 
     .pagename a {
+        background: url(%%wordmark%%);
         display: inline-block;
         height: 50px;
         text-indent: -9999em;
@@ -434,6 +441,7 @@ button {
     background-color: #FBFBFB;
     background-image: -webkit-linear-gradient(top,#FBFBFB,#EAEAEA);
     background-image:    -moz-linear-gradient(top,#FBFBFB,#EAEAEA);
+    background-image:     -ms-linear-gradient(top,#FBFBFB,#EAEAEA);
     background-image:         linear-gradient(to bottom,#FBFBFB,#EAEAEA);
     border: 1px solid #C7C7C7;
     color: #000;
@@ -508,6 +516,7 @@ button {
     background-color: #FBFBFB;
     background-image: -webkit-linear-gradient(top, #FBFBFB, #EAEAEA);
     background-image:    -moz-linear-gradient(top, #FBFBFB, #EAEAEA);
+    background-image:     -ms-linear-gradient(top, #FBFBFB, #EAEAEA);
     background-image:         linear-gradient(to bottom, #FBFBFB, #EAEAEA);
     background-position: 0 0;
     border: 1px solid #C7C7C7;
@@ -524,6 +533,7 @@ button {
         background-color: #C7C7C7;
         background-image: -webkit-linear-gradient(top, #C7C7C7, #EAEAEA);
         background-image:    -moz-linear-gradient(top, #C7C7C7, #EAEAEA);
+        background-image:     -ms-linear-gradient(top, #C7C7C7, #EAEAEA);
         background-image:         linear-gradient(to bottom, #C7C7C7, #EAEAEA);
         background-position: 0 0;
         border: 1px solid #999999;
@@ -539,6 +549,7 @@ button {
         background-color: #999999;
         background-image: -webkit-linear-gradient(top, #999999, #C7C7C7);
         background-image:    -moz-linear-gradient(top, #999999, #C7C7C7);
+        background-image:     -ms-linear-gradient(top, #999999, #C7C7C7);
         background-image:         linear-gradient(to bottom, #999999, #C7C7C7);
         background-position: 0 0;
     }
@@ -617,6 +628,7 @@ button {
         background-color: #FBFBFB;
         background-image: -webkit-linear-gradient(top, #FBFBFB, #EAEAEA);
         background-image:    -moz-linear-gradient(top, #FBFBFB, #EAEAEA);
+        background-image:     -ms-linear-gradient(top, #FBFBFB, #EAEAEA);
         background-image:         linear-gradient(to bottom, #FBFBFB, #EAEAEA);
         border: 1px solid #C7C7C7;
         border-top: 0;
@@ -849,6 +861,7 @@ button {
     background-color: #FBFBFB;
     background-image: -webkit-linear-gradient(top, #FBFBFB, #EAEAEA);
     background-image:    -moz-linear-gradient(top, #FBFBFB, #EAEAEA);
+    background-image:     -ms-linear-gradient(top, #FBFBFB, #EAEAEA);
     background-image:         linear-gradient(to bottom, #FBFBFB, #EAEAEA);
     border: 1px solid #C7C7C7;
     padding: 4px 8px;
@@ -1264,6 +1277,7 @@ button {
         background-color: #FBFBFB;
         background-image: -webkit-linear-gradient(top, #FBFBFB, #EAEAEA);
         background-image:    -moz-linear-gradient(top, #FBFBFB, #EAEAEA);
+        background-image:     -ms-linear-gradient(top, #FBFBFB, #EAEAEA);
         background-image:         linear-gradient(to bottom, #FBFBFB, #EAEAEA);
         border: 3px solid #052A5F;
         border-left: 0;
