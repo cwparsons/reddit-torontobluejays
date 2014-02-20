@@ -66,6 +66,7 @@
 .flair[title].flair-Logo1,
 .flair[title].flair-Logo2,
 .flair[title].flair-Logo3 {
+    line-height: 25px;
     padding-left: 32px;
 }
 
@@ -1185,12 +1186,18 @@ button {
     padding-top: 3px;
 }
 
+.collapsed .expand {
+    margin-left: 6px;
+}
+
 /* Remove default child */
 .child {
     border-left: 0;
 }
 
 /* Add left border to comments to denote children */
+/* The html:not([lang="ns"]) is required for Firefox RES */
+html:not([lang="ns"]) .commentarea .thing,
 .res-commentBoxes .comment,
 .comment {
     border: 1px solid #E6E6E6;
@@ -1201,36 +1208,43 @@ button {
     padding: 5px 8px 0;
 }
 
+    html:not([lang="ns"]) .commentarea .thing:hover,
     .res-commentBoxes .comment:hover,
     .comment:hover {
         border-left: 4px solid #052A5F !important;
     }
 
+    html:not([lang="ns"]) .commentarea .thing .thing,
     .res-commentBoxes .comment .comment,
     .comment .comment {
         border-left: 3px solid #E6E6E6 !important;
     }
 
+    html:not([lang="ns"]) .commentarea .thing .thing:hover,
     .res-commentBoxes .comment .comment:hover,
     .comment .comment:hover {
         border-left: 3px solid #052A5F !important;
     }
 
+    html:not([lang="ns"]) .commentarea .thing .thing .thing,
     .res-commentBoxes .comment .comment .comment,
     .comment .comment .comment {
         border-left: 2px solid #E6E6E6 !important;
     }
 
+    html:not([lang="ns"]) .commentarea .thing .thing .thing:hover,
     .res-commentBoxes .comment .comment .comment:hover,
     .comment .comment .comment:hover {
         border-left: 2px solid #052A5F !important;
     }
 
+    html:not([lang="ns"]) .commentarea .thing .thing .thing .thing,
     .res-commentBoxes .comment .comment .comment .comment,
     .comment .comment .comment .comment {
         border-left: 1px solid #E6E6E6 !important;
     }
 
+    html:not([lang="ns"]) .commentarea .thing .thing .thing .thing:hover,
     .res-commentBoxes .comment .comment .comment .comment:hover,
     .comment .comment .comment .comment:hover {
         border-left: 1px solid #052A5F !important;
