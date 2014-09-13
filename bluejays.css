@@ -1464,3 +1464,103 @@ html:not([lang="ns"]) .commentarea .thing,
 .RESDialogSmall {
     border-radius: 0 !important;
 }
+
+/**
+ * RES Nightmode
+ */
+
+.res-nightmode {}
+
+    .res-nightmode a {}
+
+    .res-nightmode .link.even {
+        background-color: #333;
+    }
+
+    .res-nightmode #header-bottom-left .tabmenu .selected a {
+        padding-bottom: 4px !important;
+    }
+
+    .res-nightmode .side .titlebox blockquote:first-child ul li {
+        background-color: #666660;
+    }
+
+    .res-nightmode .link:hover,
+    .res-nightmode .arrow.up,
+    .res-nightmode .arrow.down,
+    .res-nightmode .flair {
+        background-color: transparent !important;
+    }
+
+    .res-nightmode .RES-keyNav-activeElement,
+    .res-nightmode .RES-keyNav-activeElement .usertext-body,
+    .res-nightmode .RES-keyNav-activeElement .usertext-body .md,
+    .res-nightmode .RES-keyNav-activeElement .usertext-body .md p,
+    .res-nightmode .commentarea .RES-keyNav-activeElement .noncollapsed,
+    .res-nightmode .RES-keyNav-activeElement .noncollapsed .md,
+    .res-nightmode .RES-keyNav-activeElement .noncollapsed .md p {
+        background-color: #3C3C3C !important;
+    }
+
+    .res-nightmode .md table th {
+        background-color: #333;
+        background-image: none;
+        border: 1px solid #EEE;
+    }
+
+    .res-nightmode .md table tr:hover td {
+        background-color: #3C3C3C;
+    }
+
+    .res-nightmode .linkinfo .date,
+    .res-nightmode .morelink,
+    .res-nightmode .sidecontentbox > a.helplink,
+    .res-nightmode .sidecontentbox .title h1,
+    .res-nightmode .side .flairtoggle:before,
+    .res-nightmode .side .md h3 {
+        background-image: -webkit-linear-gradient(top, #333, #222) !important;
+        background-image:    -moz-linear-gradient(top, #333, #222) !important;
+        background-image:     -ms-linear-gradient(top, #333, #222) !important;
+        background-image:    linear-gradient(tobottom, #333, #222) !important;
+        border: 1px solid #EEE !important;
+        color: #FFF !important;
+    }
+
+    .res-nightmode .linkinfo .date {
+        border-top: 0 !important;
+    }
+
+    .res-nightmode .morelink,
+    .res-nightmode .morelink a,
+    .res-nightmode .sidecontentbox>a.helplink {
+        color: #FFF !important;
+        text-shadow: 1px 1px 0 #000;
+    }
+
+    .res-nightmode .sidebox,
+    .res-nightmode .subredditbox,
+    .res-nightmode .subreddit-info,
+    .res-nightmode .raisedbox,
+    .res-nightmode .login-form-side,
+    .res-nightmode .sidebox .morelink {
+        border-radius: 0 !important;
+    }
+
+    .res-nightmode .linkinfo .date span:after {
+        color: #FFF !important;
+    }
+
+
+    .res-nightmode .sidecontentbox .content,
+    .res-nightmode .linkinfo {
+        border: 1px solid #EEE !important;
+    }
+
+    .res-nightmode .side .md h3 + ul {
+        border: 1px solid #EEE;
+        border-top: 0;
+    }
+
+    .res-nightmode .flair {
+        color: #FFF;
+    }
