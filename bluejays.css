@@ -672,19 +672,17 @@ button {
     }
 
     .linkinfo .score,
-    .linkinfo .upvotes,
-    .linkinfo .downvotes {
+    .linkinfo .totalvotes {
         float: left;
         font-size: 12px;
         min-height: 40px;
         padding: 15px 0;
         text-align: center;
-        width: 33.333%;
+        width: 50%;
     }
 
         .linkinfo .score .number,
-        .linkinfo .upvotes .number,
-        .linkinfo .downvotes .number {
+        .linkinfo .totalvotes .number {
             display: block;
             font-size: 22px;
             font-weight: normal;
@@ -694,8 +692,7 @@ button {
             display: none;
         }
 
-        .linkinfo .upvotes .word,
-        .linkinfo .downvotes .word {
+        .linkinfo .totalvotes .word {
             font-size: 12px;
         }
 
