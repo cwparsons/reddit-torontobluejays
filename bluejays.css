@@ -378,9 +378,14 @@ button {
         background: url(%%wordmark%%);
         display: inline-block;
         height: 50px;
+        opacity: 0.95;
         text-indent: -9999em;
         width: 533px;
     }
+
+        .pagename a:hover {
+            opacity: 1;
+        }
 
 .separator {
     color: #FFF;
@@ -457,10 +462,7 @@ button {
 .sidecontentbox .title h1,
 .side .flairtoggle:before {
     background-color: #FBFBFB;
-    background-image: -webkit-linear-gradient(top,#FBFBFB,#EAEAEA);
-    background-image:    -moz-linear-gradient(top,#FBFBFB,#EAEAEA);
-    background-image:     -ms-linear-gradient(top,#FBFBFB,#EAEAEA);
-    background-image:         linear-gradient(to bottom,#FBFBFB,#EAEAEA);
+    background-image: linear-gradient(to bottom,#FBFBFB,#EAEAEA);
     border: 1px solid #C7C7C7;
     color: #000;
     content: "Flair";
@@ -532,10 +534,7 @@ button {
 .morelink,
 .sidecontentbox > a.helplink {
     background-color: #FBFBFB;
-    background-image: -webkit-linear-gradient(top, #FBFBFB, #EAEAEA);
-    background-image:    -moz-linear-gradient(top, #FBFBFB, #EAEAEA);
-    background-image:     -ms-linear-gradient(top, #FBFBFB, #EAEAEA);
-    background-image:         linear-gradient(to bottom, #FBFBFB, #EAEAEA);
+    background-image: linear-gradient(to bottom, #FBFBFB, #EAEAEA);
     background-position: 0 0;
     border: 1px solid #C7C7C7;
     text-shadow: 1px 1px 0 #FFF;
@@ -549,10 +548,7 @@ button {
     .morelink:hover,
     .sidecontentbox > a.helplink:hover {
         background-color: #C7C7C7;
-        background-image: -webkit-linear-gradient(top, #C7C7C7, #EAEAEA);
-        background-image:    -moz-linear-gradient(top, #C7C7C7, #EAEAEA);
-        background-image:     -ms-linear-gradient(top, #C7C7C7, #EAEAEA);
-        background-image:         linear-gradient(to bottom, #C7C7C7, #EAEAEA);
+        background-image: linear-gradient(to bottom, #C7C7C7, #EAEAEA);
         background-position: 0 0;
         border: 1px solid #999999;
     }
@@ -565,10 +561,7 @@ button {
     .morelink:active,
     .sidecontentbox > a.helplink:active {
         background-color: #999999;
-        background-image: -webkit-linear-gradient(top, #999999, #C7C7C7);
-        background-image:    -moz-linear-gradient(top, #999999, #C7C7C7);
-        background-image:     -ms-linear-gradient(top, #999999, #C7C7C7);
-        background-image:         linear-gradient(to bottom, #999999, #C7C7C7);
+        background-image: linear-gradient(to bottom, #999999, #C7C7C7);
         background-position: 0 0;
     }
 
@@ -644,10 +637,7 @@ button {
 
     .linkinfo .date {
         background-color: #FBFBFB;
-        background-image: -webkit-linear-gradient(top, #FBFBFB, #EAEAEA);
-        background-image:    -moz-linear-gradient(top, #FBFBFB, #EAEAEA);
-        background-image:     -ms-linear-gradient(top, #FBFBFB, #EAEAEA);
-        background-image:         linear-gradient(to bottom, #FBFBFB, #EAEAEA);
+        background-image: linear-gradient(to bottom, #FBFBFB, #EAEAEA);
         border: 1px solid #C7C7C7;
         border-top: 0;
         padding: 4px;
@@ -804,7 +794,7 @@ button {
     position: absolute;
     top: 100px;
     right: 8px;
-    z-index: 2147483649;
+    z-index: 900;
 }
 
     .side .titlebox blockquote:first-child ul {
@@ -874,10 +864,7 @@ button {
 
 .side .md h3 {
     background-color: #FBFBFB;
-    background-image: -webkit-linear-gradient(top, #FBFBFB, #EAEAEA);
-    background-image:    -moz-linear-gradient(top, #FBFBFB, #EAEAEA);
-    background-image:     -ms-linear-gradient(top, #FBFBFB, #EAEAEA);
-    background-image:         linear-gradient(to bottom, #FBFBFB, #EAEAEA);
+    background-image: linear-gradient(to bottom, #FBFBFB, #EAEAEA);
     border: 1px solid #C7C7C7;
     padding: 4px 8px;
     text-align: center;
@@ -1017,6 +1004,7 @@ button {
     padding: 10px;
     padding-bottom: 6px;
     position: relative;
+    transition: border 0.2s ease-out;
 }
 
     .link.linkflair .linkflairlabel {
@@ -1106,6 +1094,7 @@ button {
 .entry .buttons li a,
 .entry .buttons li .redditSingleClick {
     color: #C7C7C7;
+    transition: color 0.1s ease-out;
 }
 
     .entry .buttons li a[onclick="return reply(this)"],
@@ -1206,53 +1195,91 @@ html:not([lang="ns"]) .commentarea .thing,
 .res-commentBoxes .comment,
 .comment {
     border: 1px solid #E6E6E6;
-    border-left: 4px solid #E6E6E6 !important;
     border-radius: 0;
     margin-left: 0;
     margin-bottom: 10px;
-    padding: 5px 8px 0;
+    padding: 5px 8px 0 13px !important;
+    position: relative;
 }
 
     html:not([lang="ns"]) .commentarea .thing:hover,
     .res-commentBoxes .comment:hover,
     .comment:hover {
-        border-left: 4px solid #052A5F !important;
+        padding-left: 12px;
+    }
+
+html:not([lang="ns"]) .commentarea .thing:after,
+.res-commentBoxes .comment:after,
+.comment:after {
+    background-color: #E6E6E6;
+    content: "";
+    bottom: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    transition: background-color 0.1s ease-out;
+}
+
+    html:not([lang="ns"]) .commentarea .thing:hover:after,
+    .res-commentBoxes .comment:hover:after,
+    .comment:hover:after {
+        background-color: #052A5F;
+        width: 4px;
     }
 
     html:not([lang="ns"]) .commentarea .thing .thing,
     .res-commentBoxes .comment .comment,
     .comment .comment {
-        border-left: 3px solid #E6E6E6 !important;
+        padding-left: 11px;
     }
 
-    html:not([lang="ns"]) .commentarea .thing .thing:hover,
-    .res-commentBoxes .comment .comment:hover,
-    .comment .comment:hover {
-        border-left: 3px solid #052A5F !important;
+    html:not([lang="ns"]) .commentarea .thing .thing:after,
+    .res-commentBoxes .comment .comment:after,
+    .comment .comment:after {
+        width: 3px;
+    }
+
+    html:not([lang="ns"]) .commentarea .thing .thing:hover:after,
+    .res-commentBoxes .comment .comment:hover:after,
+    .comment .comment:hover:after {
+        width: 3px;
     }
 
     html:not([lang="ns"]) .commentarea .thing .thing .thing,
     .res-commentBoxes .comment .comment .comment,
     .comment .comment .comment {
-        border-left: 2px solid #E6E6E6 !important;
+        padding-left: 10px;
     }
 
-    html:not([lang="ns"]) .commentarea .thing .thing .thing:hover,
-    .res-commentBoxes .comment .comment .comment:hover,
-    .comment .comment .comment:hover {
-        border-left: 2px solid #052A5F !important;
+    html:not([lang="ns"]) .commentarea .thing .thing .thing:after,
+    .res-commentBoxes .comment .comment .comment:after,
+    .comment .comment .comment:after {
+        width: 2px;
+    }
+
+    html:not([lang="ns"]) .commentarea .thing .thing .thing:hover:after,
+    .res-commentBoxes .comment .comment .comment:hover:after,
+    .comment .comment .comment:hover:after {
+        width: 2px;
     }
 
     html:not([lang="ns"]) .commentarea .thing .thing .thing .thing,
     .res-commentBoxes .comment .comment .comment .comment,
     .comment .comment .comment .comment {
-        border-left: 1px solid #E6E6E6 !important;
+        padding-left: 9px;
     }
 
-    html:not([lang="ns"]) .commentarea .thing .thing .thing .thing:hover,
-    .res-commentBoxes .comment .comment .comment .comment:hover,
-    .comment .comment .comment .comment:hover {
-        border-left: 1px solid #052A5F !important;
+    html:not([lang="ns"]) .commentarea .thing .thing .thing .thing:after,
+    .res-commentBoxes .comment .comment .comment .comment:after,
+    .comment .comment .comment .comment:after {
+        width: 1px;
+    }
+
+    html:not([lang="ns"]) .commentarea .thing .thing .thing .thing:hover:after,
+    .res-commentBoxes .comment .comment .comment .comment:hover:after,
+    .comment .comment .comment .comment:hover:after {
+        width: 1px;
     }
 
 /* Force vertical alignment of [-], username, RES icons, flair */
@@ -1284,6 +1311,15 @@ html:not([lang="ns"]) .commentarea .thing,
  * Markdown content styles
  */
 
+.md {
+    line-height: 1.4;
+    max-width: 50em;
+}
+
+.md p {
+    margin: 8px 0;
+}
+
 .md blockquote {
     border-left: 2px solid #052A5F;
 }
@@ -1308,10 +1344,7 @@ html:not([lang="ns"]) .commentarea .thing,
 
     .md table th {
         background-color: #FBFBFB;
-        background-image: -webkit-linear-gradient(top, #FBFBFB, #EAEAEA);
-        background-image:    -moz-linear-gradient(top, #FBFBFB, #EAEAEA);
-        background-image:     -ms-linear-gradient(top, #FBFBFB, #EAEAEA);
-        background-image:         linear-gradient(to bottom, #FBFBFB, #EAEAEA);
+        background-image: linear-gradient(to bottom, #FBFBFB, #EAEAEA);
         border: 3px solid #052A5F;
         border-left: 0;
         border-right: 0;
@@ -1424,7 +1457,7 @@ html:not([lang="ns"]) .commentarea .thing,
 
 .RES-keyNav-activeElement[class] {
     background-color: transparent !important;
-    outline: 0;
+    outline: 1px dashed rgba(0, 0, 0, 0.3);
 }
 
 #REScommentNavToggle span:first-child {
@@ -1515,10 +1548,8 @@ html:not([lang="ns"]) .commentarea .thing,
     .res-nightmode .sidecontentbox .title h1,
     .res-nightmode .side .flairtoggle:before,
     .res-nightmode .side .md h3 {
-        background-image: -webkit-linear-gradient(top, #333, #222) !important;
-        background-image:    -moz-linear-gradient(top, #333, #222) !important;
-        background-image:     -ms-linear-gradient(top, #333, #222) !important;
-        background-image:    linear-gradient(tobottom, #333, #222) !important;
+        background-color: #333;
+        background-image: linear-gradient(to bottom, #333, #222) !important;
         border: 1px solid #EEE !important;
         color: #FFF !important;
     }
