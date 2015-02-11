@@ -866,6 +866,7 @@ button {
     background-color: #FBFBFB;
     background-image: linear-gradient(to bottom, #FBFBFB, #EAEAEA);
     border: 1px solid #C7C7C7;
+    margin-bottom: 0;
     padding: 4px 8px;
     text-align: center;
 }
@@ -878,6 +879,10 @@ button {
         padding: 10px;
         padding-left: 35px;
     }
+
+.side .md h3 + table {
+    margin-top: 0;
+}
 
 
 
@@ -1322,10 +1327,6 @@ html:not([lang="ns"]) .commentarea .thing:after,
 
 .md blockquote {
     border-left: 2px solid #052A5F;
-}
-
-.md ul {
-    margin-left: 3em;
 }
 
 .md table {
