@@ -59,7 +59,7 @@
 
 .flair[title] {
     line-height: 20px;
-    padding-left: 28px;
+    padding-left: 25px;
     width: auto;
 }
 
@@ -197,7 +197,51 @@
  *       Both has been added.
  */
 
-a[href$="/r/AngelsBaseball"]:before,a[href$="/r/angelsbaseball"]:before,a[href="/LAA"]:before,.flair-l,.flair-laa, a[href$="/r/Astros"]:before,a[href$="/r/astros"]:before,a[href="/HOU2"]:before,.flair-hou-2, a[href$="/r/AZDiamondbacks"]:before,a[href$="/r/azdiamondbacks"]:before,a[href="/ARI2"]:before,.flair-ari-2, a[href$="/r/Braves"]:before,a[href$="/r/braves"]:before,a[href="/ATL"]:before,.flair-atl, a[href$="/r/Brewers"]:before,a[href$="/r/brewers"]:before,a[href="/MIL"]:before,.flair-mil, a[href$="/r/Buccos"]:before,a[href$="/r/buccos"]:before,a[href="/PIT"]:before,.flair-pit, a[href$="/r/Cardinals"]:before,a[href$="/r/cardinals"]:before,a[href="/STL"]:before,.flair-stl, a[href$="/r/ColoradoRockies"]:before,a[href$="/r/coloradorockies"]:before,a[href="/COL"]:before,.flair-col, a[href$="/r/Cubs"]:before,a[href$="/r/cubs"]:before,a[href="/CHI"]:before,a[href="/CHC"]:before,.flair-chc, a[href$="/r/Dodgers"]:before,a[href$="/r/dodgers"]:before,a[href="/LAD2"]:before,.flair-lad-2, a[href$="/r/KCRoyals"]:before,a[href$="/r/kcroyals"]:before,a[href="/KCR"]:before,a[href="/KC"]:before,.flair-kc, a[href$="/r/LetsGoFish"]:before,a[href$="/r/letsgofish"]:before,a[href="/MIA"]:before,.flair-mia, a[href$="/r/Mariners"]:before,a[href$="/r/mariners"]:before,a[href="/SEA"]:before,.flair-sea, a[href$="/r/MinnesotaTwins"]:before,a[href$="/r/minnesotatwins"]:before,a[href="/MIN"]:before,.flair-min, a[href$="/r/MotorCityKitties"]:before,a[href$="/r/motorcitykitties"]:before,a[href="/DET"]:before,.flair-det, a[href$="/r/Nationals"]:before,a[href$="/r/nationals"]:before,a[href="/WAS1"]:before,a[href="/WSH"]:before,.flair-was-1, a[href$="/r/NewYorkMets"]:before,a[href$="/r/newyorkmets"]:before,a[href="/NYM"]:before,.flair-nym, a[href$="/r/NYYankees"]:before,a[href$="/r/nyyankees"]:before,a[href$="/r/Yankees"]:before,a[href$="/r/yankees"]:before,a[href="/NYY"]:before,.flair-nyy, a[href$="/r/OaklandAthletics"]:before,a[href$="/r/oaklandathletics"]:before,a[href="/OAK"]:before,.flair-oak, a[href$="/r/Orioles"]:before,a[href$="/r/orioles"]:before,a[href="/BAL2"]:before,.flair-bal-2, a[href$="/r/Padres"]:before,a[href$="/r/padres"]:before,a[href="/SDP1"]:before,a[href="/SD1"]:before,.flair-sd-1, a[href$="/r/Phillies"]:before,a[href$="/r/phillies"]:before,a[href="/PHI"]:before,.flair-phi, a[href$="/r/Reds"]:before,a[href$="/r/reds"]:before,a[href="/CIN"]:before,.flair-cin, a[href$="/r/RedSox"]:before,a[href$="/r/redsox"]:before,a[href="/BOS"]:before,.flair-bos, a[href$="/r/SFGiants"]:before,a[href$="/r/sfgiants"]:before,a[href="/SFG1"]:before,a[href="/SF1"]:before,.flair-sf-1, a[href$="/r/TampaBayRays"]:before,a[href$="/r/tampabayrays"]:before,a[href="/TBR"]:before,a[href="/TB"]:before,.flair-tb, a[href$="/r/TexasRangers"]:before,a[href$="/r/texasrangers"]:before,a[href="/TEX"]:before,.flair-tex, a[href$="/r/TorontoBlueJays"]:before,a[href$="/r/torontobluejays"]:before,a[href="/TOR2"]:before,.flair-tor-2, a[href$="/r/WahoosTipi"]:before,a[href$="/r/wahoostipi"]:before,a[href="/CLE1"]:before,.flair-cle-1, a[href$="/r/WhiteSox"]:before,a[href$="/r/whitesox"]:before,a[href="/CHW"]:before,a[href="/CWS"]:before,.flair-cws {
+a[href$="/r/AngelsBaseball"]:before, a[href$="/r/angelsbaseball"]:before, a[href="/LAA"]:before, .flair-l, .flair-laa,
+a[href$="/r/Astros"]:before, a[href$="/r/astros"]:before, a[href="/HOU2"]:before, .flair-hou-2,
+a[href$="/r/AZDiamondbacks"]:before, a[href$="/r/azdiamondbacks"]:before, a[href="/ARI2"]:before, .flair-ari-2,
+a[href$="/r/Braves"]:before, a[href$="/r/braves"]:before, a[href="/ATL"]:before, .flair-atl,
+a[href$="/r/Brewers"]:before, a[href$="/r/brewers"]:before, a[href="/MIL"]:before, .flair-mil,
+a[href$="/r/Buccos"]:before, a[href$="/r/buccos"]:before, a[href="/PIT"]:before, .flair-pit,
+a[href$="/r/Cardinals"]:before, a[href$="/r/cardinals"]:before, a[href="/STL"]:before, .flair-stl,
+a[href$="/r/ColoradoRockies"]:before, a[href$="/r/coloradorockies"]:before, a[href="/COL"]:before, .flair-col,
+a[href$="/r/Cubs"]:before, a[href$="/r/cubs"]:before, a[href="/CHI"]:before, a[href="/CHC"]:before, .flair-chc,
+a[href$="/r/Dodgers"]:before, a[href$="/r/dodgers"]:before, a[href="/LAD2"]:before, .flair-lad-2,
+a[href$="/r/KCRoyals"]:before, a[href$="/r/kcroyals"]:before, a[href="/KCR"]:before, a[href="/KC"]:before, .flair-kc,
+a[href$="/r/LetsGoFish"]:before, a[href$="/r/letsgofish"]:before, a[href="/MIA"]:before, .flair-mia,
+a[href$="/r/Mariners"]:before, a[href$="/r/mariners"]:before, a[href="/SEA"]:before, .flair-sea,
+a[href$="/r/MinnesotaTwins"]:before, a[href$="/r/minnesotatwins"]:before, a[href="/MIN"]:before, .flair-min,
+a[href$="/r/MotorCityKitties"]:before, a[href$="/r/motorcitykitties"]:before, a[href="/DET"]:before, .flair-det,
+a[href$="/r/Nationals"]:before, a[href$="/r/nationals"]:before, a[href="/WAS1"]:before, a[href="/WSH"]:before, .flair-was-1,
+a[href$="/r/NewYorkMets"]:before, a[href$="/r/newyorkmets"]:before, a[href="/NYM"]:before, .flair-nym,
+a[href$="/r/NYYankees"]:before, a[href$="/r/nyyankees"]:before, a[href$="/r/Yankees"]:before, a[href$="/r/yankees"]:before, a[href="/NYY"]:before, .flair-nyy,
+a[href$="/r/OaklandAthletics"]:before, a[href$="/r/oaklandathletics"]:before, a[href="/OAK"]:before, .flair-oak,
+a[href$="/r/Orioles"]:before, a[href$="/r/orioles"]:before, a[href="/BAL2"]:before, .flair-bal-2,
+a[href$="/r/Padres"]:before, a[href$="/r/padres"]:before, a[href="/SDP1"]:before, a[href="/SD1"]:before, .flair-sd-1,
+a[href$="/r/Phillies"]:before, a[href$="/r/phillies"]:before, a[href="/PHI"]:before, .flair-phi,
+a[href$="/r/Reds"]:before, a[href$="/r/reds"]:before, a[href="/CIN"]:before, .flair-cin,
+a[href$="/r/RedSox"]:before, a[href$="/r/redsox"]:before, a[href="/BOS"]:before, .flair-bos,
+a[href$="/r/SFGiants"]:before, a[href$="/r/sfgiants"]:before, a[href="/SFG1"]:before, a[href="/SF1"]:before, .flair-sf-1,
+a[href$="/r/TampaBayRays"]:before, a[href$="/r/tampabayrays"]:before, a[href="/TBR"]:before, a[href="/TB"]:before, .flair-tb,
+a[href$="/r/TexasRangers"]:before, a[href$="/r/texasrangers"]:before, a[href="/TEX"]:before, .flair-tex,
+a[href$="/r/TorontoBlueJays"]:before, a[href$="/r/torontobluejays"]:before, a[href="/TOR2"]:before, .flair-tor-2,
+a[href$="/r/WahoosTipi"]:before, a[href$="/r/wahoostipi"]:before, a[href="/CLE1"]:before, .flair-cle-1,
+a[href$="/r/WhiteSox"]:before, a[href$="/r/whitesox"]:before, a[href="/CHW"]:before, a[href="/CWS"]:before, .flair-cws,
+a[href$="/r/Expos"]:before, a[href$="/r/expos"]:before, .flair-mtl,
+.flair-mtl-2,
+.flair-van,
+.flair-buf,
+.flair-buf-2,
+.flair-nh,
+.flair-nh-2,
+.flair-tor-3,
+.flair-que,
+.flair-tro,
+.flair-wpg,
+.flair-edm,
+.flair-edm-2,
+.flair-edm-3,
+.flair-cdn {
     background-image: url(%%baseball-sprite%%);
     background-repeat: no-repeat;
     background-position: -9999px -9999px;
@@ -240,7 +284,23 @@ a[href$="/r/TexasRangers"]:before,a[href$="/r/texasrangers"]:before,.flair-tex {
 a[href$="/r/TorontoBlueJays"]:before,a[href$="/r/torontobluejays"]:before,.flair-tor-2 { background-position: 0 -1303px!important; }
 a[href$="/r/WahoosTipi"]:before,a[href$="/r/wahoostipi"]:before,.flair-cle-1 { background-position: 0 -1260px!important; }
 a[href$="/r/WhiteSox"]:before,a[href$="/r/whitesox"]:before,.flair-cws { background-position: 0 -168px!important; }
+a[href$="/r/Expos"]:before,a[href$="/r/expos"]:before,.flair-mtl { background-position: 0 -861px!important; }
 
+.flair-mtl-2 { background-position: 0 -1742px!important; }
+.flair-van { background-position: 0 -1762px!important; }
+.flair-buf { background-position: 0 -1782px!important; }
+.flair-buf-2 { background-position: 0 -1802px!important; }
+.flair-nh { background-position: 0 -1823px!important; }
+.flair-nh-2 { background-position: 0 -1863px!important; }
+.flair-tor-3 { background-position: 0 -1843px!important; }
+
+.flair-que { background-position: 0 -1883px!important; }
+.flair-tro { background-position: 0 -1905px!important; }
+.flair-wpg { background-position: 0 -1926px!important; }
+.flair-edm { background-position: 0 -1948px!important; }
+.flair-edm-2 { background-position: 0 -1968px!important; }
+.flair-edm-3 { background-position: 0 -1990px!important; }
+.flair-cdn { background-position: 0 -2010px!important; }
 
 
 /**
@@ -485,6 +545,7 @@ button {
 
 #search input[type=text] {
     border: 1px solid #C7C7C7;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
     #search input[type=text]:focus {
@@ -498,6 +559,7 @@ button {
 
     #searchexpando p {
         margin-bottom: 0;
+        margin-top: 10px;
     }
 
     form #searchexpando input[type=checkbox] {
@@ -944,22 +1006,15 @@ button {
     position: relative;
 }
 
+    #moderation_tools .title h1,
     .sidecontentbox .title h1 {
-        font-size: 0;
-        text-transform: capitalize;
-    }
-
-    #moderation_tools .title h1:before,
-    .sidecontentbox .title h1:before {
         font-size: 13px;
+        text-transform: lowercase;
     }
 
-    #moderation_tools .title h1:before {
-        content: "Moderator Tools";
-    }
-
-    .sidecontentbox .title h1:before {
-        content: "Moderators";
+    #moderation_tools .title h1:first-letter,
+    .sidecontentbox .title h1:first-letter {
+        text-transform: uppercase;
     }
 
     .sidecontentbox .title .collapse-button {
@@ -1186,7 +1241,7 @@ button {
 }
 
 .collapsed .expand {
-    margin-left: 6px;
+    margin-left: 0;
 }
 
 /* Remove default child */
@@ -1310,6 +1365,13 @@ html:not([lang="ns"]) .commentarea .thing:after,
         color: #052A5F;
     }
 
+.thing.spam {
+    background-color: #F8D6D3;
+}
+
+    .thing.spam:after {
+        background-color: #AE0303;
+    }
 
 
 /**
