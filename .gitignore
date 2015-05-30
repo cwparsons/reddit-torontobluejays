@@ -1,0 +1,8 @@
+# Gulp configuration
+gulp-config.js
+
+# Node dependencies
+node_modules
+
+# Build
+dist

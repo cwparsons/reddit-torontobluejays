@@ -1,0 +1,69 @@
+/**
+ * Sidebar - Teams
+ * components/sidebar/_teams.less
+ */
+
+@import (reference) "../../references/_variables.less";
+
+
+.side .titlebox blockquote:first-child {
+	border-left: 0;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	top: 100px;
+	right: 8px;
+	z-index: 900;
+}
+
+	.side .titlebox blockquote:first-child ul {
+		list-style: none;
+		margin: 0;
+	}
+
+		.side .titlebox blockquote:first-child ul li {
+			color: @white;
+			cursor: default;
+			display: inline-block;
+			line-height: 16px;
+			padding: 4px 8px;
+			position: relative;
+			white-space: nowrap;
+		}
+
+			.side .titlebox blockquote:first-child li:hover {
+				background-color: #E6E6E6;
+				color: @blue-dark;
+			}
+
+	.side .titlebox blockquote:first-child li ul {
+		background-color: #E6E6E6;
+		display: none;
+		min-width: 145px;
+		position: absolute;
+		right: 0;
+		text-align: right;
+		top: 24px;
+	}
+
+		.side .titlebox blockquote:first-child li:hover ul {
+			display: block;
+		}
+
+		.side .titlebox blockquote:first-child li ul li {
+			display: block;
+			color: @blue-dark;
+		}
+
+		.side .titlebox blockquote:first-child li ul a {
+			display: block;
+			margin: -4px -8px;
+			padding: 4px 8px;
+		}
+
+			.side .titlebox blockquote:first-child li ul a:hover {
+				background-color: #F5F5F5;
+				text-decoration: none;
+			}

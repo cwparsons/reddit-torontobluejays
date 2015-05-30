@@ -1,4 +1,3 @@
-reddit-torontobluejays
-=======================
+# reddit-torontobluejays
 
-A reddit stylesheet for r/TorontoBlueJays
+A reddit stylesheet for r/TorontoBlueJays.

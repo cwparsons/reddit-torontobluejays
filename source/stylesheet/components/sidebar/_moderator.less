@@ -1,0 +1,48 @@
+/**
+ * Sidebar - Moderator
+ * components/sidebar/_moderator.less
+ */
+
+@import (reference) "../../references/_variables.less";
+
+
+/* Hide "you are a moderator of this subreddit" */
+.leavemoderator {
+	display: none;
+	margin-top: 10px;
+}
+
+/* Hide "you are an approved submitter on this subreddit" */
+.leavecontributor-button {
+	display: none;
+}
+
+.sidecontentbox .content {
+	border: 1px solid @grey-border;
+	border-top: 0;
+}
+
+.sidecontentbox .title {
+	position: relative;
+}
+
+	#moderation_tools .title h1,
+	.sidecontentbox .title h1 {
+		font-size: 13px;
+		text-transform: lowercase;
+	}
+
+	#moderation_tools .title h1:first-letter,
+	.sidecontentbox .title h1:first-letter {
+		text-transform: uppercase;
+	}
+
+	.sidecontentbox .title .collapse-button {
+		position: absolute;
+		top: 6px;
+		right: 65px;
+	}
+
+#moderation_tools .icon-menu li {
+	padding-left: 5px;
+}

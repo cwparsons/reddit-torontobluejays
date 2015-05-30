@@ -1,0 +1,47 @@
+/**
+ * Sidebar - Sub-reddit Titlebox
+ * components/sidebar/_titlebox.less
+ */
+
+@import (reference) "../../references/_variables.less";
+
+
+.titlebox h1.redditname {
+	background-image: url(%%wordmark-300%%);
+	height: 28px;
+	margin-bottom: 10px;
+	margin-left: 0;
+	text-indent: -9999em;
+	width: 300px;
+}
+
+.subscribers {
+	display: inline-block;
+}
+
+.users-online {
+	color: #999;
+	display: inline-block;
+	margin-left: 5px;
+}
+
+	.users-online:before {
+		background-image: none;
+		display: inline-block;
+		content: "(";
+		height: auto;
+		margin-right: 0;
+		width: auto;
+	}
+
+	.users-online:after {
+		content: "online)";
+	}
+
+	.users-online .word {
+		display: none;
+	}
+
+.titlebox input[type=checkbox] {
+	vertical-align: top;
+}

@@ -1,0 +1,159 @@
+/**
+ * Pages - Commenting
+ * components/pages/_comment.less
+ */
+
+@import (reference) "../../references/_variables.less";
+
+
+.link .usertext .md {
+	background-color: @white;
+	border: 1px solid @grey-border;
+	border-radius: 0;
+	padding: 10px;
+}
+
+.panestack-title {
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+
+	.panestack-title a.title-button.gold {
+		background-color: @yellow;
+		border: 1px solid @yellow-dark;
+	}
+
+.content .spacer {
+	margin-bottom: 10px;
+}
+
+/* Align #noresults with comment box */
+.commentarea #noresults {
+	margin-left: 10px;
+}
+
+/* Contest mode */
+.comment-area .help-hoverable {
+	font-size: 11px;
+}
+
+.gold-accent.comment-visits-box {
+	border-radius: 0;
+	margin-left: 10px;
+}
+
+/* Force [-] and [+] to be aligned when collapsed/noncollapsed */
+.comment .collapsed {
+	padding-top: 3px;
+}
+
+.collapsed .expand {
+	margin-left: 0;
+}
+
+/* Remove default child */
+.child {
+	border-left: 0;
+}
+
+/* Add left border to comments to denote children */
+/* The html:not([lang="ns"]) is required for Firefox RES */
+html:not([lang="ns"]) .commentarea .thing,
+.res-commentBoxes .comment,
+.comment {
+	border: 1px solid #E6E6E6;
+	border-radius: 0;
+	margin-left: 0;
+	margin-bottom: 10px;
+	padding: 5px 8px 0 13px !important;
+	position: relative;
+}
+
+	html:not([lang="ns"]) .commentarea .thing:hover,
+	.res-commentBoxes .comment:hover,
+	.comment:hover {
+		padding-left: 12px;
+	}
+
+html:not([lang="ns"]) .commentarea .thing:after,
+.res-commentBoxes .comment:after,
+.comment:after {
+	background-color: #E6E6E6;
+	content: "";
+	bottom: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 4px;
+	transition: background-color 0.1s ease-out;
+}
+
+	html:not([lang="ns"]) .commentarea .thing:hover:after,
+	.res-commentBoxes .comment:hover:after,
+	.comment:hover:after {
+		background-color: @blue-dark;
+		width: 4px;
+	}
+
+	html:not([lang="ns"]) .commentarea .thing .thing,
+	.res-commentBoxes .comment .comment,
+	.comment .comment {
+		padding-left: 11px;
+	}
+
+	html:not([lang="ns"]) .commentarea .thing .thing:after,
+	.res-commentBoxes .comment .comment:after,
+	.comment .comment:after {
+		width: 3px;
+	}
+
+	html:not([lang="ns"]) .commentarea .thing .thing:hover:after,
+	.res-commentBoxes .comment .comment:hover:after,
+	.comment .comment:hover:after {
+		width: 3px;
+	}
+
+	html:not([lang="ns"]) .commentarea .thing .thing .thing,
+	.res-commentBoxes .comment .comment .comment,
+	.comment .comment .comment {
+		padding-left: 10px;
+	}
+
+	html:not([lang="ns"]) .commentarea .thing .thing .thing:after,
+	.res-commentBoxes .comment .comment .comment:after,
+	.comment .comment .comment:after {
+		width: 2px;
+	}
+
+	html:not([lang="ns"]) .commentarea .thing .thing .thing:hover:after,
+	.res-commentBoxes .comment .comment .comment:hover:after,
+	.comment .comment .comment:hover:after {
+		width: 2px;
+	}
+
+	html:not([lang="ns"]) .commentarea .thing .thing .thing .thing,
+	.res-commentBoxes .comment .comment .comment .comment,
+	.comment .comment .comment .comment {
+		padding-left: 9px;
+	}
+
+	html:not([lang="ns"]) .commentarea .thing .thing .thing .thing:after,
+	.res-commentBoxes .comment .comment .comment .comment:after,
+	.comment .comment .comment .comment:after {
+		width: 1px;
+	}
+
+	html:not([lang="ns"]) .commentarea .thing .thing .thing .thing:hover:after,
+	.res-commentBoxes .comment .comment .comment .comment:hover:after,
+	.comment .comment .comment .comment:hover:after {
+		width: 1px;
+	}
+
+/* Force vertical alignment of [-], username, RES icons, flair */
+/*.comment .tagline > * {
+	vertical-align: middle;
+}*/
+
+.comment .midcol {
+	width: 20px;
+}

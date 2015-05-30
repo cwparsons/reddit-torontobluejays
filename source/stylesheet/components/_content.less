@@ -1,0 +1,32 @@
+/**
+ * Content - The immediate region below is purely for moderator-generated content.
+ */
+
+
+/**
+ * Sidebar photo
+ *
+ * Configuration:
+ *   - Pre-requisite: have a side bar photo ready:
+ *        - It should be saved as a JPG (JPEG)
+ *        - Preferably should be 300px wide
+ *        - Always back up the previous image just in case!
+ *   - Upload the sidebar photo on the `edit stylesheet` page
+ *        - http://www.reddit.com/r/torontobluejays/about/stylesheet
+ *   - After uploading, you will receive a url(%%filename%%), place that in the background-image value below
+ *   - Set the padding-top to be the height of the photo
+ *   - Edit the content value in the sidebar photo text below
+ *   - Save the stylesheet
+ */
+.side .titlebox {
+	background-image: url(%%sidebar-photo%%);
+	padding-top: 169px;
+}
+
+/* Sidebar photo text */
+.side .titlebox:before {
+	content: "Blue Jays have signed Munenori Kawasaki to a Minor League contract with an invite to spring training.";
+
+	/* Uncomment the line below to hide the text */
+	/*display: none !important;*/
+}

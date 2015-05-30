@@ -1,0 +1,80 @@
+/**
+ * Sidebar - Submit a link
+ * components/sidebar/_submit.less
+ */
+
+@import (reference) "../../references/_variables.less";
+
+
+.morelink,
+.sidecontentbox > a.helplink {
+	background-color: #FBFBFB;
+	background-image: linear-gradient(to bottom, #FBFBFB, #EAEAEA);
+	background-position: 0 0;
+	border: 1px solid @grey-border;
+	text-shadow: 1px 1px 0 @white;
+}
+
+	.morelink a,
+	.sidecontentbox > a.helplink {
+		color: @grey;
+	}
+
+	.morelink:hover,
+	.sidecontentbox > a.helplink:hover {
+		background-color: @grey-border;
+		background-image: linear-gradient(to bottom, @grey-border, #EAEAEA);
+		background-position: 0 0;
+		border: 1px solid #999999;
+	}
+
+		.morelink:hover a,
+		.sidecontentbox > a.helplink:hover {
+			color: @grey;
+		}
+
+	.morelink:active,
+	.sidecontentbox > a.helplink:active {
+		background-color: #999999;
+		background-image: linear-gradient(to bottom, #999999, @grey-border);
+		background-position: 0 0;
+	}
+
+	.morelink .nub {
+		display: none;
+	}
+
+.sidecontentbox > a.helplink {
+	display: block;
+	float: none;
+	font-size: 0;
+	font-weight: bold;
+	letter-spacing: -1px;
+	line-height: 29px;
+	height: 29px;
+	margin: 7px 0 12px;
+	text-align: center;
+}
+
+	.sidecontentbox > a.helplink:before {
+		content: "Message the moderators";
+		font-size: 15px;
+	}
+
+.roundfield {
+	background-color: #F5F5F5;
+	border-radius: 0;
+	padding: 10px;
+}
+
+#url-field .title-status {
+	color: @red;
+}
+
+.gold-accent {
+	border-color: @yellow-dark;
+}
+
+.content.submit .info-notice {
+	border-color: @blue-light;
+}

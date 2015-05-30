@@ -1,0 +1,35 @@
+/**
+ * Sidebar - General
+ * components/sidebar/_base.less
+ */
+
+@import (reference) "../../references/_variables.less";
+
+
+.side {
+	margin: 0 10px;
+}
+
+	.side .spacer {
+		margin-top: 10px;
+	}
+
+/* Sidebar - H3 */
+.side .md h3,
+.sidecontentbox .title h1,
+.side .flairtoggle:before {
+	background-color: #FBFBFB;
+	background-image: linear-gradient(to bottom,#FBFBFB,#EAEAEA);
+	border: 1px solid @grey-border;
+	color: #000;
+	content: "Flair";
+	display: block;
+	font-size: 13px;
+	font-weight: bold;
+	text-align: center;
+	padding: 4px 8px;
+}
+
+.side .md a:hover {
+	text-decoration: underline;
+}

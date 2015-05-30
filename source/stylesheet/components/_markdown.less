@@ -1,0 +1,137 @@
+/**
+ * Markdown content styles
+ * components/_markdown.less
+ */
+
+@import (reference) "../references/_variables.less";
+
+
+.md {
+	line-height: 1.4;
+	max-width: 50em;
+}
+
+.md p {
+	margin: 8px 0;
+}
+
+.md blockquote {
+	border-left: 2px solid @blue-dark;
+}
+
+.md table {
+	border: 1px solid @grey-border;
+	border-top: 0;
+	margin: 0;
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+	.md table th,
+	.md table td {
+		border: 1px solid @grey-border;
+		padding: 4px 3px;
+	}
+
+	.md table th {
+		background-color: #FBFBFB;
+		background-image: linear-gradient(to bottom, #FBFBFB, #EAEAEA);
+		border: 3px solid @blue-dark;
+		border-left: 0;
+		border-right: 0;
+	}
+
+	.md table th[align="center"] {
+		text-align: center;
+	}
+
+	.md table td {
+		border-left: 0;
+		border-right: 0;
+	}
+
+	.md table tr:hover td {
+		background-color: #FBFBFB;
+	}
+
+	.md table td:empty {
+		min-width: 10px;
+	}
+
+.md pre {
+	background: #F5F5F5;
+	border: 1px solid @grey-border;
+	padding: 10px;
+}
+
+
+
+/**
+ * Content Markdown styles
+ */
+
+.content .md h1 {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.content .md h2 {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.content .md h3 {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.content .md h4 {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.content .md h5 {
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.content .md h6 {
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.content .md h1,
+.content .md h2,
+.content .md h3,
+.content .md h4,
+.content .md h5,
+.content .md h6 {
+	color: @grey;
+}
+
+.content .md h1,
+.content .md h2,
+.content .md h3 {
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.content .md h4,
+.content .md h5,
+.content .md h6 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.content .md h1:first-child,
+.content .md h2:first-child,
+.content .md h3:first-child,
+.content .md h4:first-child,
+.content .md h5:first-child,
+.content .md h6:first-child {
+	margin-top: 0;
+}
+
+.content .md a:hover {
+	text-decoration: underline;
+}

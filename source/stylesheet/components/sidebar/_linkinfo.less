@@ -1,0 +1,78 @@
+/**
+ * Sidebar - Link Information
+ * components/sidebar/_linkinfo.less
+ */
+
+@import (reference) "../../references/_variables.less";
+
+
+.linkinfo {
+	background-color: @white;
+	border: 1px solid @grey-border;
+	border-radius: 0;
+	padding-top: 0;
+}
+
+	.linkinfo .date {
+		background-color: #FBFBFB;
+		background-image: linear-gradient(to bottom, #FBFBFB, #EAEAEA);
+		border: 1px solid @grey-border;
+		border-top: 0;
+		padding: 4px;
+		margin: 0 -6px;
+		text-align: center;
+	}
+
+	.linkinfo .date span {
+		font-size: 0;
+	}
+
+	.linkinfo .date span:after {
+		content: "This post was submitted on ";
+		display: inline;
+		font-size: 12px;
+		font-weight: normal;
+		color: @grey;
+	}
+
+	.linkinfo time {
+		font-weight: bold;
+	}
+
+	.linkinfo .score,
+	.linkinfo .totalvotes {
+		float: left;
+		font-size: 12px;
+		min-height: 40px;
+		padding: 15px 0;
+		text-align: center;
+		width: 50%;
+	}
+
+		.linkinfo .score .number,
+		.linkinfo .totalvotes .number {
+			display: block;
+			font-size: 22px;
+			font-weight: normal;
+		}
+
+		.linkinfo .score .word {
+			display: none;
+		}
+
+		.linkinfo .totalvotes .word {
+			font-size: 12px;
+		}
+
+	.linkinfo .shortlink {
+		clear: both;
+		display: block;
+		text-align: center;
+	}
+
+		.linkinfo .shortlink input {
+			border: 1px solid @grey-border;
+			font-size: 13px;
+			margin: 0 auto;
+			text-align: center;
+		}

@@ -1,0 +1,127 @@
+/**
+ * Header
+ * components/_header.less
+ */
+
+@import (reference) "../references/_variables.less";
+
+
+#sr-header-area,
+#sr-more-link {
+	height: 23px;
+	line-height: 24px;
+}
+
+#sr-header-area a {
+	line-height: 24px;
+}
+
+.dropdown.srdrop .selected {
+	background-position: 100% 2px;
+}
+
+/**
+ * Header - Banner
+ */
+
+#header {
+	background-color: @blue-dark;
+	border-bottom: 0;
+}
+
+#header-img {
+	margin-left: 5px;
+	margin-top: 13px;
+}
+
+#header-bottom-left {
+	height: 100px;
+}
+
+	#header-bottom-left a {
+		color: @white;
+	}
+
+.user {
+	color: @white;
+}
+
+#header-bottom-right[id] {
+	background-color: transparent;
+	top: 22px;
+	right: 5px;
+}
+
+	#header-bottom-right a {
+		color: @white;
+	}
+
+#userbarToggle[id] {
+	display: none;
+}
+
+.pagename {
+	color: @white;
+	line-height: 50px;
+	position: absolute;
+	top: 42px;
+}
+
+	.pagename a {
+		background: url(%%wordmark%%);
+		display: inline-block;
+		height: 50px;
+		opacity: 0.95;
+		text-indent: -9999em;
+		width: 533px;
+	}
+
+		.pagename a:hover {
+			opacity: 1;
+		}
+
+.separator {
+	color: @white;
+}
+
+
+
+/**
+ * Header - Tab Menu
+ */
+
+#header .tabmenu {
+	bottom: 0;
+	left: 100px;
+	position: absolute;
+}
+
+#header .tabmenu li a {
+	background-color: transparent;
+	color: @white;
+	display: inline-block;
+	padding: 4px 8px;
+}
+
+	#header .tabmenu li a:hover {
+		background-color: @blue-light;
+	}
+
+	#header .tabmenu li a:active {
+		background-color: @blue-dark;
+	}
+
+#header .tabmenu li.selected a,
+#header .tabmenu li.selected a:hover {
+	background-color: @white;
+	border: 1px solid #000;
+	border-bottom: 0;
+	color: @blue-dark;
+}
+
+/* Generic tab menus */
+
+.tabmenu.formtab .selected a {
+	font-size: 13px;
+	padding-top: 1px;
+}

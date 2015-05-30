@@ -1,0 +1,137 @@
+/**
+ * Pages - Listings
+ * components/pages/_listing.less
+ */
+
+@import (reference) "../../references/_variables.less";
+
+
+.infobar.welcome {
+	margin: 10px !important;
+}
+
+	.infobar.welcome h1 {
+		color: @grey;
+	}
+
+.arrow {
+	margin-bottom: 3px;
+	margin-top: 3px;
+}
+
+.link {
+	border-left: 5px solid #999;
+	margin: 10px;
+	overflow: visible;
+	padding: 10px;
+	padding-bottom: 6px;
+	position: relative;
+	transition: border 0.2s ease-out;
+}
+
+	.link.linkflair .linkflairlabel {
+		display: none;
+	}
+
+	.link.linkflair .flairselector .linkflairlabel {
+		display: inline-block;
+		margin: 3px;
+	}
+
+	.link.even {
+		background: #F5F5F5;
+	}
+
+	.link:hover {
+		border-left: 5px solid @blue-dark;
+		background-color: #FBFBFB !important;
+	}
+
+	.link .rank {
+		margin-top: 19px;
+	}
+
+	.link.stickied {
+		border: 1px solid @blue-light;
+		border-left: 5px solid @blue-light;
+	}
+
+		.link.stickied a.title {
+			color: @blue-light !important;
+		}
+
+	.link.last-clicked {
+		border: 1px solid @grey-border;
+		border-left: 5px solid @grey-border;
+		overflow: visible;
+	}
+
+		.link.last-clicked:not(.linkflair):hover {
+			border: 1px solid @blue-dark;
+			border-left: 5px solid @blue-dark;
+		}
+
+	.link.linkflair-gamethread {
+		border-left: 5px solid @red;
+	}
+
+	.link.linkflair-weeklythread {
+		border-left: 5px solid @green-light;
+	}
+
+	.link.linkflair-announcement {
+		border-left: 5px solid @yellow;
+	}
+
+	.link .score.likes,
+	.res_post_ups {
+		color: @red;
+	}
+
+	.link .score.dislikes,
+	.res_post_downs {
+		color: @blue-dark;
+	}
+
+.link .title {
+	color: @blue;
+}
+
+	.link.linkflair .title {
+		font-weight: bold;
+	}
+
+	.link .title:hover {
+		color: @blue-dark;
+	}
+
+	.link .title:active {
+		color: @blue-darker;
+	}
+
+.nsfw-stamp acronym {
+	color: @red;
+}
+
+.entry .buttons li a,
+.entry .buttons li .redditSingleClick {
+	color: @grey-border;
+	transition: color 0.1s ease-out;
+}
+
+	.entry .buttons li a[onclick="return reply(this)"],
+	.entry .buttons li a.comments,
+	.comment .entry:hover .buttons li a,
+	.link:hover .entry .buttons li a,
+	.link:hover .entry .buttons li .redditSingleClick {
+		color: #999;
+	}
+
+.tagline,
+.comment .score {
+	font-size: 11px;
+}
+
+.edited-timestamp[title]:after {
+	font-size: 11px !important;
+}
