@@ -56,6 +56,14 @@
 	border-left: 0;
 }
 
+.child:empty {
+	display: none !important;
+}
+
+.entry {
+	padding: 3px;
+}
+
 /* Add left border to comments to denote children */
 /* The html:not([lang="ns"]) is required for Firefox RES */
 html:not([lang="ns"]) .commentarea .thing,
@@ -63,9 +71,11 @@ html:not([lang="ns"]) .commentarea .thing,
 .comment {
 	border: 1px solid #E6E6E6;
 	border-radius: 0;
+	margin-bottom: 5px !important;
 	margin-left: 0;
-	margin-bottom: 10px;
-	padding: 5px 8px 0 13px !important;
+	margin-top: 10px !important;
+	padding: 4px 8px !important;
+	padding-left: 13px !important;
 	position: relative;
 }
 
@@ -155,5 +165,6 @@ html:not([lang="ns"]) .commentarea .thing:after,
 }*/
 
 .comment .midcol {
+	margin-top: 5px;
 	width: 20px;
 }

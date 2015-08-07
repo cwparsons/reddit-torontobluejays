@@ -83,6 +83,10 @@ gulp.task('less', function () {
 });
 
 gulp.task('watch', function () {
+	gulp.watch(paths.less, ['less']);
+});
+
+gulp.task('serve', function () {
 	gulp.watch(paths.less, ['less', 'deploy']);
 });
 
