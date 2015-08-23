@@ -1,0 +1,21 @@
+/**
+ * No participation styles
+ * components/_no-participation.less
+ */
+
+@import (reference) "../references/_variables.less";
+
+
+body:not(.subscriber) .down {
+	visibility: hidden !important;
+}
+
+body:not(.subscriber) #siteTable:before {
+	content: "You are currently not a subscriber of /r/TorontoBlueJays. Please respect that by not downvoting. Thank you.";
+	background-color: @blue-lighter;
+	border: 1px solid @blue;
+	display: block;
+	font-size: 14px;
+	margin: 5px 10px;
+	padding: 10px;
+}

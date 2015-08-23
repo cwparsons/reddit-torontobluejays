@@ -1,0 +1,35 @@
+/**
+ * Easter eggs
+ * components/_easter-eggs.less
+ */
+
+@import (reference) "../references/_variables.less";
+
+
+/*! Intensifies, borrowed from r/Flyers */
+
+@keyframes intensify {
+	0% {
+		margin-left: 0px;
+	}
+
+	100% {
+		margin-left: 2px;
+	}
+}
+
+a[href="/intensifies"] {
+	animation: intensify .1s steps(5) infinite;
+	color: @black;
+	display: block;
+	font-size: 15px;
+	text-transform: uppercase;
+
+	&:before {
+		content: "[";
+	}
+
+	&:after {
+		content: "]";
+	}
+}
